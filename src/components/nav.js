@@ -1,5 +1,3 @@
 const nav = () => {
-    return (
-        
-    )
-}
+  return;
+};
