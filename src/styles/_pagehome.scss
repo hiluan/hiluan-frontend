@@ -1,0 +1,60 @@
+@import "./config";
+
+.page-home {
+  grid-column-start: 6;
+  grid-column-end: 19;
+  background-color: $darkmode-background-second;
+  height: 80vh;
+  margin-top: 10vh;
+  border-radius: 1rem;
+  overflow: auto;
+  position: relative;
+  transition: $transition-all-ease;
+  //   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-text {
+  position: absolute;
+  bottom: 1rem;
+  z-index: 9;
+}
+.home-text h3 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: $darkmode-text-third;
+}
+.home-header {
+  //   background-image: linear-gradient(to bottom right, red, yellow);
+  font-size: 2rem;
+  font-weight: 200;
+  color: $darkmode-text-second;
+  padding: 1rem;
+}
+
+.home-text h1 span {
+  font-weight: 500;
+  color: $darkmode-text-first;
+}
+
+.home-img {
+  position: absolute;
+  margin: auto;
+  //   top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.no-hover {
+  pointer-events: none;
+  height: 110%;
+}
+
+@media screen and (max-width: 900px) {
+  .page-home {
+    grid-column-start: 3;
+  }
+}

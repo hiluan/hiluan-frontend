@@ -1,0 +1,18 @@
+@import "./config";
+.page-others {
+  grid-column-start: 4;
+  grid-column-end: 19;
+  background-color: $darkmode-background-second;
+  height: 80vh;
+  margin-top: 10vh;
+  border-radius: 1rem;
+  overflow: auto;
+  transition: $transition-all-ease;
+  z-index: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .page-others {
+    grid-column-start: 3;
+  }
+}
