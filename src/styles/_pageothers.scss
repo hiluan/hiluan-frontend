@@ -14,5 +14,7 @@
 @media screen and (max-width: 900px) {
   .page-others {
     grid-column-start: 3;
+    height: 96vh;
+    margin-top: 2vh;
   }
 }

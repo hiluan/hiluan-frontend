@@ -20,9 +20,10 @@ nav section {
   align-items: center;
   position: absolute;
   top: 3rem;
-  //   width: 81%;
-
-  //   justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 nav section a {
@@ -38,7 +39,7 @@ nav section a:visited {
   //   border: solid 1px $stonkdown-third;
   border-radius: 5rem;
   color: $darkmode-text-first;
-  background: $button-gradient-45-second;
+  // background: $button-gradient-45-second;
 }
 
 nav section a:hover,
@@ -60,7 +61,11 @@ nav section h1 {
   transition: $transition-all-ease;
   text-align: center;
 }
-
+nav section h3 {
+  color: $darkmode-text-second;
+  transition: $transition-all-ease;
+  text-align: center;
+}
 nav ul {
   list-style-type: none;
   text-align: center;
@@ -84,6 +89,10 @@ nav ul li {
     font-size: 3.4rem;
     font-weight: 500;
     padding-top: 2rem;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 400;
     padding-bottom: 1rem;
   }
   ul {
@@ -100,6 +109,10 @@ nav ul li {
     font-size: 1.2rem;
     font-weight: 300;
     padding-top: 1rem;
+  }
+  h3 {
+    font-size: 1rem;
+    font-weight: 300;
   }
   ul {
     display: flex;

@@ -1,10 +1,10 @@
-import hiluan from "../img/hiluan.jpg";
+import { myAvatar } from "./_myAvatar";
 
 const SectionIntro = () => {
   return (
     <section className="section-intro">
       <section className="section-photo">
-        <img className="intro-photo" src={hiluan} alt="Luan says hi!" />{" "}
+        <img className="intro-photo" src={myAvatar} alt="Luan says hi!" />{" "}
         <section className="border-photo"></section>
       </section>
       <section className="intro-details">
@@ -36,7 +36,9 @@ const SectionIntro = () => {
         {/* <button className="intro-btn" type="button"> */}
         {/* Get in Touch */}
         {/* </button> */}
-        <a href="/contact">Get in Touch</a>
+        <a className="btn btn-main" href="/contact">
+          Get in Touch
+        </a>
       </section>
     </section>
   );

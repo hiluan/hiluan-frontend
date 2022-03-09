@@ -12,6 +12,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { isHomePageAction } from "../store/isHomePageAction";
 import { isIconActiveAction } from "../store/isIconActiveAction";
+import { myAvatar } from "./_myAvatar";
 
 const Nav = () => {
   const dispatch = useDispatch();
@@ -29,10 +30,11 @@ const Nav = () => {
   return (
     <nav className={isHomePage ? "nav-home-page" : "nav-other-pages"}>
       <section className="nav-header">
-        <img id="nav-img" className="nav-img" src={hiluan} alt="" />
+        <img id="nav-img" className="nav-img" src={myAvatar} alt="" />
         <h1 className="nav-name">Luan Pham</h1>
+        <h3>- MArch -</h3>
         {isHomePage && (
-          <a className="btn main-btn nav-download-resume" href="">
+          <a className="btn btn-main nav-download-resume" href="">
             Download My Resume
           </a>
         )}

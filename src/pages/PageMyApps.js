@@ -1,7 +1,52 @@
+import myAppsInfo from "../components/_myAppsInfo";
+
+const MyApp = (props) => (
+  <section className="myapp-info">
+    <section>
+      <section className="myapp-title">
+        <h2 className="myapp-name">{props.app.name} </h2>
+        <div></div>
+      </section>
+      <h4 className="myapp-tools">
+        {props.app.tools.map((tool) => (
+          <span>{tool}</span>
+        ))}
+      </h4>
+
+      <p className="myapp-description">{props.app.description}</p>
+    </section>
+    <section>
+      <a className="myapp-image" target="_blank" href={props.app.linkToApp}>
+        <img
+          target="_blank"
+          href={props.app.linkToApp}
+          src={props.app.imgUrl}
+          alt={props.app.description}
+        />{" "}
+      </a>
+    </section>
+    <section>
+      <a
+        className="btn btn-main myapp-linkToApp"
+        target="_blank"
+        href={props.app.linkToApp}
+      >
+        View App
+      </a>
+    </section>
+  </section>
+);
+
 const MyApps = () => {
+  const appList = () => {
+    return myAppsInfo.map((app) => {
+      return <MyApp app={app} key={app.name} />;
+    });
+  };
   return (
     <section className="page-others page-myapps">
-      <h1>My Apps</h1>
+      {/* <h1>My Apps</h1> */}
+      {appList()}
     </section>
   );
 };
