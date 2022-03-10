@@ -1,12 +1,15 @@
 @import "./config";
 
 .section-intro {
-  display: flex;
+  // display: flex;
   // justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  margin: 0;
+  justify-items: center;
 }
 
 .section-photo {
-  width: 100%;
   margin: 5rem 3rem;
   position: relative;
 }
@@ -15,6 +18,7 @@
   width: 90%;
   border-radius: 2rem 2rem 0;
   position: relative;
+  max-width: 600px;
   z-index: 2;
 }
 
@@ -31,7 +35,7 @@
 }
 
 .intro-details {
-  margin: 3rem;
+  margin: 4rem 3rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -60,7 +64,7 @@
   padding: 1.5rem 3rem;
   transition: $transition-all-ease;
   text-align: center;
-  width: 25%;
+  width: 50%;
 }
 
 .intro-details a:link,
@@ -78,12 +82,11 @@
 .section-basicinfo ul {
   list-style-type: none;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   font-size: 2rem;
   color: $darkmode-text-second;
   font-weight: 300;
   width: 50%;
-  align-items: center;
   margin: auto;
   li {
     padding: 1rem 0;

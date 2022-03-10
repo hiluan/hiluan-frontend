@@ -11,7 +11,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  // box-sizing: 0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
@@ -97,20 +97,20 @@ body {
   );
   background-size: 600% 600%;
 
-  -webkit-animation: GradientAnimator 5s ease infinite;
-  -moz-animation: GradientAnimator 5s ease infinite;
-  -o-animation: GradientAnimator 5s ease infinite;
-  animation: GradientAnimator 5s ease infinite;
-}
-
-.btn-main {
-  background: linear-gradient(29deg, #ff0000, #ff007d, #ff00ce);
-  background-size: 200% 200%;
-
   -webkit-animation: GradientAnimator 30s ease infinite;
   -moz-animation: GradientAnimator 30s ease infinite;
   -o-animation: GradientAnimator 30s ease infinite;
   animation: GradientAnimator 30s ease infinite;
+}
+
+.btn-main {
+  background: linear-gradient(29deg, #ff0000, #ff007d, #ff00ce);
+  background-size: 100% 100%;
+
+  -webkit-animation: GradientAnimator 5s ease infinite;
+  -moz-animation: GradientAnimator 5s ease infinite;
+  -o-animation: GradientAnimator 5s ease infinite;
+  animation: GradientAnimator 5s ease infinite;
 }
 
 @-webkit-keyframes GradientAnimator {

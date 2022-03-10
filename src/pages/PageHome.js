@@ -18,7 +18,7 @@ const Home = () => {
         </section>
       </section>
       <section className="home-img">
-        {/* <ReactPlayer
+        <ReactPlayer
           className="no-hover"
           url={youtubeLink}
           playing={true}
@@ -26,7 +26,7 @@ const Home = () => {
           controls={false}
           width="100%"
           height="100%"
-        /> */}
+        />
       </section>
     </section>
   );
