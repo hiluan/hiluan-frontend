@@ -3,32 +3,56 @@
 .page-contact {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  padding: 2rem;
+  padding: 0 2rem;
   transition: $transition-all-ease;
+  align-items: center;
+
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  li {
+    display: flex;
+
+    margin: 2rem 5rem;
+  }
+  .info-icon {
+    color: $allmodes-text-third;
+    font-size: 5rem;
+    font-weight: 300;
+  }
+
+  .info-detail-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+  }
 }
 form {
   display: flex;
   flex-direction: column;
   padding: 2rem;
   transition: $transition-all-ease;
+  margin: 0 5rem;
   //   max-width: 420px;
   //   margin: 50px auto;
 }
 
 .feedback-input {
   padding: 1.3rem;
-  color: $darkmode-text-first;
   font-weight: 300;
   font-size: 1.5rem;
-  border-radius: 0.5rem;
   line-height: 2rem;
   transition: all 0.3s;
   margin: 1rem 0;
   width: 100%;
   box-sizing: border-box;
   outline: 0;
-
   border: none;
+  // border-radius: 0.5rem;
   //   background: linear-gradient(
   //     29deg,
   //     #1b1e2a,
@@ -43,17 +67,21 @@ form {
   //   -moz-animation: GradientAnimator 30s ease infinite;
   //   -o-animation: GradientAnimator 30s ease infinite;
   //   animation: GradientAnimator 30s ease infinite;
-  box-shadow: $boxshadow-inset-outline-hover;
-
+  // box-shadow: $boxshadow-inset-outline-hover;
+  border-bottom: solid 1px $allmodes-text-third;
   background: transparent;
+  &::placeholder {
+    color: $darkmode-text-second;
+  }
 }
 
 .feedback-input:hover {
-  box-shadow: $boxshadow-inset-outline-active;
+  // box-shadow: $boxshadow-inset-outline-active;
+  border-bottom: solid 1px $allmodes-text-first;
 }
 
 .feedback-input:focus {
-  //   border: 1px solid $allmodes-text-first;
+  border-bottom: 1px solid $allmodes-text-last;
   box-shadow: none;
 
   //   background: transparent;

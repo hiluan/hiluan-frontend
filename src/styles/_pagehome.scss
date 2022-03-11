@@ -3,7 +3,8 @@
 .page-home {
   grid-column-start: 6;
   grid-column-end: 19;
-  background-color: $darkmode-background-second;
+  background: white;
+  // background-color: $darkmode-background-second;
   height: 80vh;
   margin-top: 10vh;
   border-radius: 1rem;
@@ -14,6 +15,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 
 .home-text {
@@ -41,10 +43,14 @@
 
 .home-img {
   position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  // top: -5rem;
+  width: calc(
+    80vh * 16 / 9
+  ); //https://stackoverflow.com/questions/32070752/css-replace-black-bars-from-youtube-embed
+  height: 110%;
+  background-size: contain;
+  // margin: auto;
+
   // object-fit: contain;
 }
 

@@ -1,6 +1,10 @@
 import { myAvatar } from "./_myAvatar";
+import { Link } from "react-router-dom";
+import { handlerSwitchOtherPages } from "./_handlerSwitchPages";
+import { useDispatch } from "react-redux";
 
 const SectionIntro = () => {
+  const dispatch = useDispatch();
   return (
     <section className="section-intro">
       <section className="section-photo">
@@ -23,8 +27,7 @@ const SectionIntro = () => {
           </p>
           <br />
           <p className="intro-description">
-            My name is Shawn Charles. I’m a passionate child of parents who
-            emigrated from Guyana, passionate about creating community within
+            My name is Luan Pham. I’m passionate about creating community within
             the tech space, And a passionate software engineer who will do
             whatever it takes to find an answer.
           </p>
@@ -36,9 +39,13 @@ const SectionIntro = () => {
         {/* <button className="intro-btn" type="button"> */}
         {/* Get in Touch */}
         {/* </button> */}
-        <a className="btn btn-main" href="/contact">
+        <Link
+          className="btn btn-main"
+          onClick={() => handlerSwitchOtherPages(dispatch, "contact")}
+          to="/contact"
+        >
           Get in Touch
-        </a>
+        </Link>
       </section>
     </section>
   );

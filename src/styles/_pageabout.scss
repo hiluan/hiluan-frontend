@@ -96,3 +96,10 @@
   font-weight: 400;
   color: $darkmode-text-first;
 }
+
+@media screen and (max-width: 1440px) {
+  .intro-details a {
+    // margin: auto;
+    // width: 100%;
+  }
+}

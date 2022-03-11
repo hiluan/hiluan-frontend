@@ -1,21 +1,31 @@
-import SectionBasicInfo from "../components/PageAbout-SectionBasicInfo";
-
+import { BiMailSend, BiPhoneCall, BiMap } from "react-icons/bi";
 const Contact = () => {
   return (
     <section className="page-others page-contact">
       <section className="section-basicinfo">
         <ul className="info-detail-group">
           <li className="info-detail">
-            <span className="info-detail-bold">Email</span>
-            <span className="info-detail-regular">: luan@hiluan.dev</span>
+            <BiMailSend className="info-icon" />
+            <span className="info-detail-text">
+              <span className="info-detail-bold">Write me</span>
+              <span className="info-detail-regular">luan@hiluan.dev</span>
+            </span>
           </li>
           <li className="info-detail">
-            <span className="info-detail-bold">Phone</span>
-            <span className="info-detail-regular">: +1 (513) 900 8369</span>
+            <BiPhoneCall className="info-icon" />
+            <span className="info-detail-text">
+              <span className="info-detail-bold">Call Me</span>
+              <span className="info-detail-regular">+1 (513) 900 8369</span>
+            </span>
           </li>
           <li className="info-detail">
-            <span className="info-detail-bold">Location</span>
-            <span className="info-detail-regular">: San Jose, CA, USA</span>
+            <BiMap className="info-icon" />
+            <span className="info-detail-text">
+              <span className="info-detail-bold">Coffee Me</span>
+              <span className="info-detail-regular">
+                I'm in San Jose, CA, USA
+              </span>
+            </span>
           </li>
         </ul>
       </section>
@@ -24,18 +34,18 @@ const Contact = () => {
           name="name"
           type="text"
           className="feedback-input"
-          placeholder="Name"
+          placeholder="Your Name"
         />
         <input
           name="email"
           type="text"
           className="feedback-input"
-          placeholder="Email"
+          placeholder="Your Email"
         />
         <textarea
           name="text"
           className="feedback-input"
-          placeholder="Comment"
+          placeholder="Your Message..."
         ></textarea>
 
         <input type="submit" value="SUBMIT" />

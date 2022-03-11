@@ -7,26 +7,28 @@ import {
   FaRegStar,
   FaRegCommentDots,
 } from "react-icons/fa";
-import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { isHomePageAction } from "../store/isHomePageAction";
-import { isIconActiveAction } from "../store/isIconActiveAction";
+import { useDispatch } from "react-redux";
 import { myAvatar } from "./_myAvatar";
+import {
+  handlerSwitchHomePage,
+  handlerSwitchOtherPages,
+} from "./_handlerSwitchPages";
 
 const Nav = () => {
   const dispatch = useDispatch();
   const isHomePage = useSelector((state) => state.ultilities.isHomePage);
   const iconActive = useSelector((state) => state.ultilities.iconActive);
 
-  const handlerSwitchHomePage = (icon) => {
-    dispatch(isHomePageAction(true));
-    dispatch(isIconActiveAction(icon));
-  };
-  const handlerSwitchOtherPages = (icon) => {
-    dispatch(isHomePageAction(false));
-    dispatch(isIconActiveAction(icon));
-  };
+  // const handlerSwitchHomePage = (icon) => {
+  //   dispatch(isHomePageAction(true));
+  //   dispatch(isIconActiveAction(icon));
+  // };
+  // const handlerSwitchOtherPages = (icon) => {
+  //   dispatch(isHomePageAction(false));
+  //   dispatch(isIconActiveAction(icon));
+  // };
   return (
     <nav className={isHomePage ? "nav-home-page" : "nav-other-pages"}>
       <section className="nav-header">
@@ -47,14 +49,14 @@ const Nav = () => {
                 ? "icon-active nav-list-icon"
                 : "nav-list-icon"
             }
-            onClick={() => handlerSwitchHomePage("home")}
+            onClick={() => handlerSwitchHomePage(dispatch, "home")}
             to="/"
           >
             <FaFontAwesomeAlt />
           </Link>
           <Link
             className="nav-list-text"
-            onClick={() => handlerSwitchHomePage("home")}
+            onClick={() => handlerSwitchHomePage(dispatch, "home")}
             to="/"
           >
             <span>home</span>
@@ -67,14 +69,14 @@ const Nav = () => {
                 ? "icon-active nav-list-icon"
                 : "nav-list-icon"
             }
-            onClick={() => handlerSwitchOtherPages("myApps")}
+            onClick={() => handlerSwitchOtherPages(dispatch, "myApps")}
             to="/apps"
           >
             <FaAppStore />
           </Link>
           <Link
             className="nav-list-text"
-            onClick={() => handlerSwitchOtherPages("myApps")}
+            onClick={() => handlerSwitchOtherPages(dispatch, "myApps")}
             to="/apps"
           >
             <span>my apps</span>
@@ -87,14 +89,14 @@ const Nav = () => {
                 ? "icon-active nav-list-icon"
                 : "nav-list-icon"
             }
-            onClick={() => handlerSwitchOtherPages("myDesigns")}
+            onClick={() => handlerSwitchOtherPages(dispatch, "myDesigns")}
             to="/designs"
           >
             <FaPalette />
           </Link>
           <Link
             className="nav-list-text"
-            onClick={() => handlerSwitchOtherPages("myDesigns")}
+            onClick={() => handlerSwitchOtherPages(dispatch, "myDesigns")}
             to="/designs"
           >
             <span>my designs</span>
@@ -107,14 +109,14 @@ const Nav = () => {
                 ? "icon-active nav-list-icon"
                 : "nav-list-icon"
             }
-            onClick={() => handlerSwitchOtherPages("aboutMe")}
+            onClick={() => handlerSwitchOtherPages(dispatch, "aboutMe")}
             to="/about"
           >
             <FaRegStar />
           </Link>
           <Link
             className="nav-list-text"
-            onClick={() => handlerSwitchOtherPages("aboutMe")}
+            onClick={() => handlerSwitchOtherPages(dispatch, "aboutMe")}
             to="/about"
           >
             <span>about me</span>
@@ -127,14 +129,14 @@ const Nav = () => {
                 ? "icon-active nav-list-icon"
                 : "nav-list-icon"
             }
-            onClick={() => handlerSwitchOtherPages("resume")}
+            onClick={() => handlerSwitchOtherPages(dispatch, "resume")}
             to="/resume"
           >
             <FaRegAddressCard />
           </Link>
           <Link
             className="nav-list-text"
-            onClick={() => handlerSwitchOtherPages("resume")}
+            onClick={() => handlerSwitchOtherPages(dispatch, "resume")}
             to="/resume"
           >
             <span>resume</span>
@@ -147,14 +149,14 @@ const Nav = () => {
                 ? "icon-active nav-list-icon"
                 : "nav-list-icon"
             }
-            onClick={() => handlerSwitchOtherPages("contact")}
+            onClick={() => handlerSwitchOtherPages(dispatch, "contact")}
             to="/contact"
           >
             <FaRegCommentDots />
           </Link>
           <Link
             className="nav-list-text"
-            onClick={() => handlerSwitchOtherPages("contact")}
+            onClick={() => handlerSwitchOtherPages(dispatch, "contact")}
             to="/contact"
           >
             <span>contact</span>
