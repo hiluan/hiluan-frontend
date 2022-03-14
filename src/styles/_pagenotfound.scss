@@ -1,0 +1,15 @@
+.page-not-found {
+  background: $darkmode-background-second;
+  h1 {
+    color: $darkmode-background-first;
+    font-size: 25rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .page-not-found {
+    h1 {
+      font-size: 18rem;
+    }
+  }
+}

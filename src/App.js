@@ -1,5 +1,5 @@
 import "./styles/app.scss";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./pages/PageHome";
 import MyApps from "./pages/PageMyApps";
@@ -7,12 +7,44 @@ import MyDesigns from "./pages/PageMyDesigns";
 import About from "./pages/PageAbout";
 import Resume from "./pages/PageResume";
 import Contact from "./pages/PageContact";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import {
+  handlerSwitchHomePage,
+  handlerSwitchOtherPages,
+} from "./components/_handlerSwitchPages";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
+  const location = useLocation();
+  const dispatch = useDispatch();
+  // when typing pathname in browser, app goes to the exact address
+  useEffect(() => {
+    if (location.pathname.includes("about")) {
+      handlerSwitchOtherPages(dispatch, "about");
+      return;
+    } else if (location.pathname.includes("contact")) {
+      handlerSwitchOtherPages(dispatch, "contact");
+      return;
+    } else if (location.pathname.includes("apps")) {
+      handlerSwitchOtherPages(dispatch, "apps");
+      return;
+    } else if (location.pathname.includes("designs")) {
+      handlerSwitchOtherPages(dispatch, "designs");
+      return;
+    } else if (location.pathname.includes("resume")) {
+      handlerSwitchOtherPages(dispatch, "resume");
+      return;
+    } else {
+      handlerSwitchHomePage(dispatch, "home");
+      return;
+    }
+  }, [location.pathname]);
   return (
     <div className="App dark-mode">
       <Nav />
       <Routes>
+        <Route path="*" element={<PageNotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="/apps" element={<MyApps />} />
         <Route path="/designs" element={<MyDesigns />} />

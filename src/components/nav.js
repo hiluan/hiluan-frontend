@@ -1,12 +1,12 @@
 import hiluan from "../img/hiluan.jpg";
 import {
   FaAppStore,
-  FaFontAwesomeAlt,
   FaRegAddressCard,
-  FaPalette,
   FaRegStar,
   FaRegCommentDots,
 } from "react-icons/fa";
+import { BiHomeSmile, BiPalette } from "react-icons/bi";
+import { GiPalette } from "react-icons/gi";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -18,17 +18,11 @@ import {
 
 const Nav = () => {
   const dispatch = useDispatch();
+  let nIntervId;
+
   const isHomePage = useSelector((state) => state.ultilities.isHomePage);
   const iconActive = useSelector((state) => state.ultilities.iconActive);
 
-  // const handlerSwitchHomePage = (icon) => {
-  //   dispatch(isHomePageAction(true));
-  //   dispatch(isIconActiveAction(icon));
-  // };
-  // const handlerSwitchOtherPages = (icon) => {
-  //   dispatch(isHomePageAction(false));
-  //   dispatch(isIconActiveAction(icon));
-  // };
   return (
     <nav className={isHomePage ? "nav-home-page" : "nav-other-pages"}>
       <section className="nav-header">
@@ -44,19 +38,29 @@ const Nav = () => {
       <ul className="nav-list">
         <li className="nav-list-item">
           <Link
-            className={
-              iconActive === "home"
-                ? "icon-active nav-list-icon"
-                : "nav-list-icon"
+            className={`nav-list-icon ${
+              iconActive === "home" ? "icon-active" : ""
+            }`}
+            onClick={() =>
+              handlerSwitchHomePage(
+                dispatch,
+                "home"
+                // nIntervId
+              )
             }
-            onClick={() => handlerSwitchHomePage(dispatch, "home")}
             to="/"
           >
-            <FaFontAwesomeAlt />
+            <BiHomeSmile />
           </Link>
           <Link
             className="nav-list-text"
-            onClick={() => handlerSwitchHomePage(dispatch, "home")}
+            onClick={() =>
+              handlerSwitchHomePage(
+                dispatch,
+                "home"
+                // nIntervId
+              )
+            }
             to="/"
           >
             <span>home</span>
@@ -64,11 +68,9 @@ const Nav = () => {
         </li>
         <li className="nav-list-item">
           <Link
-            className={
-              iconActive === "myApps"
-                ? "icon-active nav-list-icon"
-                : "nav-list-icon"
-            }
+            className={`nav-list-icon ${
+              iconActive === "myApps" ? "icon-active" : ""
+            }`}
             onClick={() => handlerSwitchOtherPages(dispatch, "myApps")}
             to="/apps"
           >
@@ -84,19 +86,29 @@ const Nav = () => {
         </li>
         <li className="nav-list-item">
           <Link
-            className={
-              iconActive === "myDesigns"
-                ? "icon-active nav-list-icon"
-                : "nav-list-icon"
+            className={`nav-list-icon ${
+              iconActive === "myDesigns" ? "icon-active" : ""
+            }`}
+            onClick={() =>
+              handlerSwitchOtherPages(
+                dispatch,
+                "myDesigns"
+                // nIntervId
+              )
             }
-            onClick={() => handlerSwitchOtherPages(dispatch, "myDesigns")}
             to="/designs"
           >
-            <FaPalette />
+            <GiPalette />
           </Link>
           <Link
             className="nav-list-text"
-            onClick={() => handlerSwitchOtherPages(dispatch, "myDesigns")}
+            onClick={() =>
+              handlerSwitchOtherPages(
+                dispatch,
+                "myDesigns"
+                // nIntervId
+              )
+            }
             to="/designs"
           >
             <span>my designs</span>
@@ -104,11 +116,9 @@ const Nav = () => {
         </li>
         <li className="nav-list-item">
           <Link
-            className={
-              iconActive === "aboutMe"
-                ? "icon-active nav-list-icon"
-                : "nav-list-icon"
-            }
+            className={`nav-list-icon ${
+              iconActive === "aboutMe" ? "icon-active" : ""
+            }`}
             onClick={() => handlerSwitchOtherPages(dispatch, "aboutMe")}
             to="/about"
           >
@@ -124,11 +134,9 @@ const Nav = () => {
         </li>
         <li className="nav-list-item">
           <Link
-            className={
-              iconActive === "resume"
-                ? "icon-active nav-list-icon"
-                : "nav-list-icon"
-            }
+            className={`nav-list-icon ${
+              iconActive === "resume" ? "icon-active" : ""
+            }`}
             onClick={() => handlerSwitchOtherPages(dispatch, "resume")}
             to="/resume"
           >
@@ -144,11 +152,9 @@ const Nav = () => {
         </li>
         <li className="nav-list-item">
           <Link
-            className={
-              iconActive === "contact"
-                ? "icon-active nav-list-icon"
-                : "nav-list-icon"
-            }
+            className={`nav-list-icon ${
+              iconActive === "contact" ? "icon-active" : ""
+            }`}
             onClick={() => handlerSwitchOtherPages(dispatch, "contact")}
             to="/contact"
           >

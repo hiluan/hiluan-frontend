@@ -62,5 +62,12 @@
 @media screen and (max-width: 900px) {
   .page-home {
     grid-column-start: 3;
+    height: 96vh;
+    margin-top: 2vh;
+    .home-img {
+      width: calc(96vh * 16 / 9);
+      // height: 130%;
+      transform: translateX(-25%);
+    }
   }
 }

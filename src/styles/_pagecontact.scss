@@ -70,6 +70,8 @@ form {
   // box-shadow: $boxshadow-inset-outline-hover;
   border-bottom: solid 1px $allmodes-text-third;
   background: transparent;
+  color: $darkmode-text-first;
+
   &::placeholder {
     color: $darkmode-text-second;
   }

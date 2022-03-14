@@ -7,7 +7,7 @@ const Contact = () => {
           <li className="info-detail">
             <BiMailSend className="info-icon" />
             <span className="info-detail-text">
-              <span className="info-detail-bold">Write me</span>
+              <span className="info-detail-bold">Write Me</span>
               <span className="info-detail-regular">luan@hiluan.dev</span>
             </span>
           </li>
@@ -22,9 +22,7 @@ const Contact = () => {
             <BiMap className="info-icon" />
             <span className="info-detail-text">
               <span className="info-detail-bold">Coffee Me</span>
-              <span className="info-detail-regular">
-                I'm in San Jose, CA, USA
-              </span>
+              <span className="info-detail-regular">San Jose, CA, USA</span>
             </span>
           </li>
         </ul>

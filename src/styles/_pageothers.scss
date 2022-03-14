@@ -16,5 +16,9 @@
     grid-column-start: 3;
     height: 96vh;
     margin-top: 2vh;
+    img {
+      height: 96vh;
+      transform: translateX(-25%);
+    }
   }
 }
