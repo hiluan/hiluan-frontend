@@ -7,7 +7,7 @@ const JavaScript = "JavaScript";
 const langHTML = "HTML";
 const langCSS = "CSS";
 const Shopify = "Shopify";
-const myAppsInfo = [
+const infoMyApps = [
   {
     name: "Starlite",
     tools: [MongoDB, ExpressJS, ReactJS, NodeJS, Sass],
@@ -44,4 +44,4 @@ const myAppsInfo = [
   },
 ];
 
-export default myAppsInfo;
+export default infoMyApps;

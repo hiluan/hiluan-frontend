@@ -1,26 +1,36 @@
 .page-mydesigns {
+  background: black;
   overflow: hidden;
+  position: relative;
 }
+
+/* Slideshow container */
 .slideshow-container {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+}
+
+.slideshow-container {
+  position: relative;
+  //   margin: auto;
 }
 
 .mydesign-slide {
   position: relative;
-
   .mydesign-title {
-    font-size: 2rem;
-    padding: 1rem 2rem;
     position: absolute;
-    background-color: red;
-    bottom: 1rem;
+    top: 0;
     right: 1rem;
-    // width: 100%;
+    transform: translateY(100%);
     text-align: right;
-    z-index: 1;
+    z-index: 2;
     .mydesign-name {
       color: $darkmode-text-first;
       font-size: 4rem;
       font-weight: 400;
+      //   background: $darkmode-background-second-08opacity;
+      width: auto;
     }
     .mydesign-tools {
       color: $darkmode-text-second;
@@ -34,29 +44,32 @@
       border-radius: 0.5rem;
       margin-right: 0.5rem;
     }
-
     .mydesign-description {
+      background: $darkmode-background-second-08opacity;
       color: $darkmode-text-second;
       font-size: 1.5rem;
       font-weight: 300;
-      padding: 0.75rem 0;
+      //   padding: 0.75rem 0;
     }
   }
 
   img {
+    // display: none;
     position: absolute;
     top: 0;
-
-    // width: calc(80vh * 16 / 9);
-    // width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: calc(96vh * 16 / 9);
     // background-size: contain;
-    // overflow: hidden;
     // max-width: 100%;
     // max-height: 100%;
     // height: 100%;
-    // object-fit: cover;
+    object-fit: cover;
+    z-index: 1;
   }
 }
+/* Number text (1/3 etc) */
 .slideshow-numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -64,45 +77,98 @@
   position: absolute;
   top: 0;
 }
+
+// /* Caption text */
+// .text {
+//     color: #f2f2f2;
+//     font-size: 15px;
+//     padding: 8px 12px;
+//     position: absolute;
+//     bottom: 8px;
+//     width: 100%;
+//     text-align: center;
+//   }
+
+/* Fading animation */
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 9;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.slideshow-play {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 4rem;
+  color: $darkmode-text-second;
+  transition: $transition-all-ease;
+  z-index: 9;
+}
+
+.slideshow-play:hover {
+  color: $darkmode-text-first;
+  box-shadow: $boxshadow;
+}
+.slideshow-play:active {
+  color: $darkmode-text-second;
+  box-shadow: none;
+}
 /* The dots/bullets/indicators */
+.slideshow-dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 9;
+}
+.active,
+.slideshow-dot:hover {
+  background-color: #717171;
+}
 .slideshow-dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: $darkmode-background-second-08opacity;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  margin: 0.5rem;
 }
 
 .active,
-.slideshow-dot:hover {
+.dot:hover {
   background-color: #717171;
 }
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+.dot-active {
+  background-color: $darkmode-text-first;
 }

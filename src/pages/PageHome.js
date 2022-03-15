@@ -5,7 +5,7 @@ const Home = () => {
   const youtubeEmbed =
     "https://www.youtube.com/embed/PhtYjZ_3fTw?controls=0&autoplay=1&loop=1&modestbranding=1&showinfo=0&fs=0";
   return (
-    <section className="page-home">
+    <section className="page-home fade">
       <section className="home-text">
         <h3>FULLSTACK SOFTWARE ENGINEER</h3>
         <section className="home-header">

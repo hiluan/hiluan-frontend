@@ -1,6 +1,6 @@
-import myDesignsInfo from "../components/_myDesignsInfo";
+import infoMyDesigns from "../components/_infoMyDesigns";
 
-const isSlideActiveReducer = (state = myDesignsInfo, action) => {
+const isSlideActiveReducer = (state = infoMyDesigns, action) => {
   switch (action.type) {
     case "IS_SLIDE_ACTIVE":
       const index = action.payload.index;

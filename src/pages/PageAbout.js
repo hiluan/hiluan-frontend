@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 const About = () => {
   return (
-    <section className="page-others page-about">
+    <section className="page-others page-about fade">
       <SectionIntro />
       <hr />
       <SectionBasicInfo />

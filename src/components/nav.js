@@ -5,7 +5,7 @@ import {
   FaRegStar,
   FaRegCommentDots,
 } from "react-icons/fa";
-import { BiHomeSmile, BiPalette } from "react-icons/bi";
+import { BiHomeSmile } from "react-icons/bi";
 import { GiPalette } from "react-icons/gi";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";

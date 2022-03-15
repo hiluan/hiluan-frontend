@@ -1,7 +1,7 @@
 import { BiMailSend, BiPhoneCall, BiMap } from "react-icons/bi";
 const Contact = () => {
   return (
-    <section className="page-others page-contact">
+    <section className="page-others page-contact fade">
       <section className="section-basicinfo">
         <ul className="info-detail-group">
           <li className="info-detail">

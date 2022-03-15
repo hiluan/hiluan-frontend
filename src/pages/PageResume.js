@@ -1,25 +1,56 @@
-const Resume = () => {
-  let nIntervId;
-  function startInt() {
-    // check if already an interval has been set up
-    if (!nIntervId) {
-      nIntervId = setInterval(() => console.log("iii"), 500);
-    }
-  }
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { isSlidesPlayingAction } from "../store/isSlidesPlayingAction";
 
-  function stopInt() {
-    clearInterval(nIntervId);
-    // release our intervalID from the variable
-    nIntervId = null;
-  }
+const Resume = () => {
+  //   const [isPlaying, setIsPlaying] = useState(false);
+  //   let nIntervId;
+  //   function startInt() {
+  //     // check if already an interval has been set up
+  //     if (!nIntervId) {
+  //       nIntervId = setInterval(() => console.log("iii"), 500);
+  //     }
+  //   }
+
+  //   function stopInt() {
+  //     clearInterval(nIntervId);
+  //     // release our intervalID from the variable
+  //     nIntervId = null;
+  //   }
+
+  //   const handlerSlidesPlaying = () => {
+  //     if (!isPlaying) {
+  //       startInt();
+  //       setIsPlaying(true);
+  //       console.log(isPlaying);
+  //       return;
+  //     } else {
+  //       stopInt();
+  //       setIsPlaying(false);
+  //       console.log(isPlaying);
+  //       return;
+  //     }
+  //   };
+
+  const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds((seconds) => seconds + 1);
+    }, 100);
+    return () => clearInterval(interval);
+  }, []);
   return (
-    <section className="page-others page-resume">
-      <button type="button" onClick={startInt}>
-        start
+    <section className="page-others page-resume fade">
+      {/* <button type="button" onClick={handlerSlidesPlaying}>
+        click
       </button>
-      <button type="button" onClick={stopInt}>
+      <button type="button" onClick={handlerSlidesPlaying}>
         stop
-      </button>
+      </button> */}
+      <header className="a-header">
+        {seconds} seconds have elapsed since mounting.
+      </header>
     </section>
   );
 };

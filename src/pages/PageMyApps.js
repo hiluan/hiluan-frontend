@@ -1,4 +1,4 @@
-import myAppsInfo from "../components/_myAppsInfo";
+import infoMyApps from "../components/_infoMyApps";
 
 const MyApp = (props) => (
   <section className="myapp-info">
@@ -39,12 +39,12 @@ const MyApp = (props) => (
 
 const MyApps = () => {
   const appList = () => {
-    return myAppsInfo.map((app) => {
+    return infoMyApps.map((app) => {
       return <MyApp app={app} key={app.name} />;
     });
   };
   return (
-    <section className="page-others page-myapps">
+    <section className="page-others page-myapps fade">
       {/* <h1>My Apps</h1> */}
       {appList()}
     </section>

@@ -1,37 +1,33 @@
-import myDesignsInfo from "../components/_myDesignsInfo";
-import { Fade } from "react-slideshow-image";
-
-// export default myDesignsInfo;
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useLocation } from "react-router-dom";
+import infoMyDesigns from "../components/_infoMyDesigns";
+import { isSlideActiveAction } from "../store/isSlideActiveAction";
+import handlerAllSlidesInactive from "../components/_handlerAllSlidesInactive";
+import { FaPlayCircle, FaPauseCircle } from "react-icons/fa";
+import { isSlidesPlayingAction } from "../store/isSlidesPlayingAction";
 
 const MyDesign = (props) => (
-  <section className="mydesign-slide">
-    <section className="mydesign-title">
-      {/* <h2 className="mydesign-name">{props.project.name} </h2>
-      <h4 className="mydesign-tools">
-        {props.project.tools.map((tool) => (
-          <span>{tool}</span>
-        ))}
-      </h4> */}
-      <p>
-        <span className="mydesign-name">{props.project.name}</span>
-      </p>
-      <p>
-        <span className="mydesign-tools">
-          {props.project.tools.map((tool) => (
-            <span className="mydesign-tool">{tool}</span>
-          ))}
-        </span>
-      </p>
-      <p>
-        <span className="mydesign-description">
-          {props.project.description}
-        </span>
-      </p>
-    </section>
-    <img src={props.project.imgUrl} alt={props.project.description} />
-    {/* <span className="slideshow-numbertext">
-        {props.indexOf(props.project)}/{props.length}
-      </span> */}
+  <section>
+    {props.project.active && (
+      <section
+        // className={`slide-inactive ${props.project.active ? "mydesign-slide" : ""}`}
+        className="mydesign-slide fade"
+      >
+        <section className="mydesign-title">
+          <h2 className="mydesign-name">{props.project.name} </h2>
+          <h4 className="mydesign-tools">
+            {props.project.tools.map((tool) => (
+              <span key={tool} className="mydesign-tool">
+                {tool}
+              </span>
+            ))}
+          </h4>
+          <p className="mydesign-description">{props.project.description}</p>
+        </section>
+        <img src={props.project.imgUrl} alt={props.project.description} />
+      </section>
+    )}
   </section>
 );
 
@@ -50,9 +46,33 @@ const MyDesign = (props) => (
 // }
 
 const MyDesigns = () => {
-  // const currentP = useSelector((state) => state.ultilities.iconActive);
-  // const dispatch = useDispatch();
-  // const location = useLocation();
+  //https://www.w3schools.com/howto/howto_js_slideshow.asp
+  const slides = useSelector((state) => state.ultilities.slides);
+  const slidesLength = slides.length;
+  const indexFirstSlide = 0;
+  const indexCurrentSlide = slides.findIndex((slide) => slide.active === true);
+  const indexLastSlide = slidesLength - 1;
+  const dispatch = useDispatch();
+  const location = useLocation();
+
+  const toNextSlide = () => {
+    handlerAllSlidesInactive(slides);
+    console.log(";;;;;;;;;;;;");
+    indexCurrentSlide === indexLastSlide
+      ? dispatch(isSlideActiveAction(indexFirstSlide))
+      : dispatch(isSlideActiveAction(indexCurrentSlide + 1));
+  };
+
+  const toPrevSlide = () => {
+    handlerAllSlidesInactive(slides);
+    indexCurrentSlide === indexFirstSlide
+      ? dispatch(isSlideActiveAction(indexLastSlide))
+      : dispatch(isSlideActiveAction(indexCurrentSlide - 1));
+  };
+  const toDotSlide = (index) => {
+    handlerAllSlidesInactive(slides);
+    dispatch(isSlideActiveAction(index));
+  };
   // useEffect(() => {
   //   let nIntervId;
   //   let slideIndex = 0;
@@ -89,38 +109,36 @@ const MyDesigns = () => {
   // }, []);
 
   const designList = () => {
-    return myDesignsInfo.map((project) => {
+    return infoMyDesigns.map((project) => {
       return <MyDesign project={project} key={project.description} />;
     });
   };
-  const fadeProperties = {
-    duration: 3000,
-    pauseOnHover: true,
-    autoplay: true,
-    indicators: true,
-  };
+  // x
   return (
     <section className="page-others page-mydesigns">
-      <section className="slideshow-container slide-container">
-        {/* <h1>My projects</h1> */}
-        <Fade {...fadeProperties}>{designList()}</Fade>
-        {/* <a className="prev" onClick="plusSlides(-1)">
+      <section className="slideshow-container">{designList()}</section>
+      <section className="slideshow-arrows">
+        <a className="prev" onClick={toPrevSlide}>
           &#10094;
         </a>
-        <a className="next" onClick="plusSlides(1)">
+        <a className="next" onClick={toNextSlide}>
           &#10095;
-        </a> */}
+        </a>
       </section>
-      {/* <section className="slideshow-dots">
-        <span className="slideshow-dot" onClick="currentSlide(1)"></span>
-        <span className="slideshow-dot" onClick="currentSlide(2)"></span>
-        <span className="slideshow-dot" onClick="currentSlide(3)"></span>
+      {/* <section onClick={handlerSlidesPlaying} className="slideshow-play">
+        <FaPlayCircle />
       </section> */}
+      <section className="slideshow-dots">
+        {slides.map((slide, index) => (
+          <span
+            key={index}
+            className={`slideshow-dot ${slide.active && "dot-active"}`}
+            onClick={() => toDotSlide(index)}
+          ></span>
+        ))}
+      </section>
     </section>
   );
 };
-// const MyDesigns = () => {
-//   return <section className="page-others page-mydesigns"></section>;
-// };
 
 export default MyDesigns;
