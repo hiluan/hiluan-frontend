@@ -1,0 +1,127 @@
+@import "./config";
+
+.page-resume {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  padding: 2rem;
+  transition: $transition-all-ease;
+  font-size: 1.5rem;
+  .exp-title {
+    padding-bottom: 0.75rem;
+  }
+  h2 {
+    text-transform: capitalize;
+    color: $darkmode-text-first;
+    font-size: 4rem;
+    font-weight: 400;
+  }
+  h3 {
+    color: $darkmode-text-second;
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+  h3.h3-bold {
+    font-weight: 400;
+    color: $darkmode-text-first;
+  }
+  h4 {
+    color: $darkmode-text-second;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 1rem 0;
+  }
+  h4.resume-skills {
+    // display: inline;
+    color: $darkmode-text-first;
+  }
+  span {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: $darkmode-background-first;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: $darkmode-text-third;
+  }
+  ul {
+    padding: 1rem 0;
+  }
+  li {
+    color: $darkmode-text-first;
+    font-weight: 300;
+    line-height: 2.5rem;
+    margin-left: 1.8rem;
+  }
+
+  .resume-info {
+    padding: 3rem;
+    padding-top: 3rem;
+    transition: $transition-all-ease;
+  }
+
+  .resume-section {
+    padding-bottom: 5rem;
+  }
+  .resume-title {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    div {
+      display: inline-block;
+      width: 100%;
+      margin: 1rem 0;
+      border-bottom: solid 2px $darkmode-text-first;
+    }
+  }
+  .resume-body {
+    padding: 1rem 0;
+    p.resume-language {
+      color: $darkmode-text-third;
+    }
+  }
+  .exp-info {
+    padding: 2rem 0;
+    p.exp-description {
+      color: $darkmode-text-third;
+      font-style: italic;
+    }
+    p.exp-timeLocation {
+      color: $darkmode-text-last;
+      font-style: italic;
+    }
+  }
+
+  .resume-linkToApp {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    transition: $transition-all-ease;
+    text-align: center;
+  }
+
+  .resume-linkToApp:link,
+  .resume-linkToApp:visited {
+    //   border: solid 1px $stonkdown-third;
+    border-radius: 0.75rem;
+    color: $darkmode-text-first;
+  }
+
+  .resume-linkToApp:hover,
+  .resume-linkToApp:active {
+    background: $button-gradient-45-first;
+  }
+}
+
+.resume-languages {
+}
+@media screen and (max-width: 1440px) {
+  //   .page-resumes {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //   }
+}
