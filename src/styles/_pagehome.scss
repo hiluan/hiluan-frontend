@@ -20,25 +20,77 @@
 
 .home-text {
   position: absolute;
-  bottom: 1rem;
+  bottom: 8rem;
+  right: 0;
+  text-align: right;
   z-index: 9;
-}
-.home-text h3 {
-  font-size: 1.5rem;
-  font-weight: 200;
-  color: $darkmode-text-third;
-}
-.home-header {
-  //   background-image: linear-gradient(to bottom right, red, yellow);
-  font-size: 2rem;
-  font-weight: 200;
-  color: $darkmode-text-second;
-  padding: 1rem;
+  .home-header {
+    font-size: 5rem;
+    font-weight: 300;
+    color: $darkmode-text-second;
+    background-color: $darkmode-background-second-08opacity;
+    border-radius: 1rem 0 0 1rem;
+    // padding: 1rem;
+  }
+  h1 {
+    font-weight: 500;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    // text-shadow: 0 0 $darkmode-background-first;
+  }
+  h1 span {
+    // font-size: 8rem;
+
+    color: $darkmode-text-first;
+    // text-shadow: 0 0 4px $darkmode-background-first;
+  }
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: $darkmode-text-third;
+  }
 }
 
-.home-text h1 span {
-  font-weight: 500;
-  color: $darkmode-text-first;
+.home-bg-img {
+  position: absolute;
+  // top: -5rem;
+  width: calc(80vh * 16 / 9);
+  height: 110%;
+  background-size: contain;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
 }
 
 .home-img {
@@ -49,14 +101,11 @@
   ); //https://stackoverflow.com/questions/32070752/css-replace-black-bars-from-youtube-embed
   height: 110%;
   background-size: contain;
-  // margin: auto;
-
-  // object-fit: contain;
+  z-index: 1;
 }
 
 .no-hover {
   pointer-events: none;
-  // height: 110%;
 }
 
 @media screen and (max-width: 900px) {
@@ -66,7 +115,6 @@
     margin-top: 2vh;
     .home-img {
       width: calc(96vh * 16 / 9);
-      // height: 130%;
       transform: translateX(-25%);
     }
   }

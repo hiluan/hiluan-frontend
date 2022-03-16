@@ -17,6 +17,12 @@ const Home = () => {
           <h1>Welcome to my special place! </h1>
         </section>
       </section>
+      <section className="home-bg-img fadeOut">
+        <img
+          src="https://i.ibb.co/NtFG6qW/hiluan-vienna-project.jpg"
+          alt="vienna project - architectural design "
+        />
+      </section>
       <section className="home-img">
         <ReactPlayer
           className="no-hover"

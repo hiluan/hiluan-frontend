@@ -1,10 +1,10 @@
 const infoMyDesigns = [
   {
-    active: false,
+    active: true,
     name: "design production for iounica.com",
     tools: ["Photoshop"],
     description:
-      "iounica.com is a fashion startup for which I gave many graphic design solutions. This design proudction is one of my favorite works.",
+      "This graphic design belonged to one of the design solutions which included fashion, photography, design coordination altogether.",
     imgUrl: "https://i.ibb.co/jhF4Q0G/hiluan-skizzenhaus-iounica.jpg",
   },
   {
@@ -17,7 +17,7 @@ const infoMyDesigns = [
       "https://i.ibb.co/cy3qkzG/hiluan-istanbul-architectural-design-project.jpg",
   },
   {
-    active: true,
+    active: false,
     name: "architectural design project for a private client",
     tools: ["Cinema4D", "Photoshop", "SketchUp", "AutoCAD", "VRay"],
     description:

@@ -21,7 +21,7 @@ const infoMyApps = [
     name: "Cinciao.com",
     tools: [JavaScript, langHTML, langCSS, Shopify],
     description:
-      "Cinciao is a PaaS, or platform as a service, which allows celebrities to send personalized video messages to fans in Vietnam.",
+      "Cinciao is a platform as a service, which allows Vietnamese celebrities to send personalized video messages to fans in Vietnam.",
     // imgUrl: "https://i.ibb.co/cXfx1wW/hiluan-cinciao-vn.jpg",
     imgUrl: "https://i.ibb.co/t2jvfNf/hiluan-cinciao-com-vn.jpg",
     linkToApp: "https://cinciao.com",
@@ -38,7 +38,7 @@ const infoMyApps = [
     name: "iounica.com",
     tools: [JavaScript, langHTML, langCSS, Shopify],
     description:
-      "iounica is an B2C online shop in Germany. iounica gives its German customers a chance to try the best Italian styles to date.",
+      "iounica is a B2C online shop in Germany. iounica gives its German customers a chance to try the best Italian styles to date.",
     imgUrl: "https://i.ibb.co/tDZ8GKc/hiluan-iounica-com-de-vmilano.jpg",
     linkToApp: "https://iounica.com",
   },

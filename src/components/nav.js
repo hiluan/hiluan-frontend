@@ -1,4 +1,3 @@
-import hiluan from "../img/hiluan.jpg";
 import {
   FaAppStore,
   FaRegAddressCard,
@@ -18,7 +17,7 @@ import {
 
 const Nav = () => {
   const dispatch = useDispatch();
-  let nIntervId;
+  const resume = "./";
 
   const isHomePage = useSelector((state) => state.ultilities.isHomePage);
   const iconActive = useSelector((state) => state.ultilities.iconActive);
@@ -30,7 +29,11 @@ const Nav = () => {
         <h1 className="nav-name">Luan Pham</h1>
         <h3>- MArch -</h3>
         {isHomePage && (
-          <a className="btn btn-main nav-download-resume" href="">
+          <a
+            target="_blank"
+            className="btn btn-main nav-download-resume"
+            href="https://drive.google.com/file/d/1V0znK9bh2IZNlOctL5aQAFJG4mUBcjtE/view?usp=sharing"
+          >
             Download My Resume
           </a>
         )}
