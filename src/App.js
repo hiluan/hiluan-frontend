@@ -1,18 +1,19 @@
 import "./styles/app.scss";
 import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import MenuButton from "./components/MenuButton";
 import Nav from "./components/Nav";
+import {
+  handlerSwitchHomePage,
+  handlerSwitchOtherPages,
+} from "./components/_handlerSwitchPages";
 import Home from "./pages/PageHome";
 import MyApps from "./pages/PageMyApps";
 import MyDesigns from "./pages/PageMyDesigns";
 import About from "./pages/PageAbout";
 import Resume from "./pages/PageResume";
 import Contact from "./pages/PageContact";
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import {
-  handlerSwitchHomePage,
-  handlerSwitchOtherPages,
-} from "./components/_handlerSwitchPages";
 import PageNotFound from "./pages/PageNotFound";
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
   return (
     <div className="App dark-mode">
       <Nav />
+      <MenuButton />
       <Routes>
         <Route path="*" element={<PageNotFound />} />
         <Route path="/" element={<Home />} />

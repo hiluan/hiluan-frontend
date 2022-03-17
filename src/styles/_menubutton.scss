@@ -1,0 +1,38 @@
+@import "./config";
+
+#menu-mobile {
+  display: none;
+  position: absolute;
+  right: calc(50vw - 3rem);
+  bottom: 5vh;
+  font-size: 6rem;
+  height: 8rem;
+  //   background: red;
+  color: $darkmode-text-second;
+  border-radius: 50%;
+  border: none;
+  z-index: 9;
+  padding: 0.5rem;
+  //   margin: 1rem;
+  border: 0.5rem solid $darkmode-text-second;
+}
+// #menu-button:focus {
+//   background-color: $darkmode-text-second;
+// }
+
+#menu-button {
+  display: none;
+  background: $darkmode-text-second;
+  border-radius: 50%;
+}
+@media screen and (max-width: 900px) {
+  #menu-mobile {
+    display: block;
+    // transform: translateX(-300%);
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  #menu-button {
+    display: block;
+  }
+}

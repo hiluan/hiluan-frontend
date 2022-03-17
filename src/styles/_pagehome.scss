@@ -45,20 +45,19 @@
     // text-shadow: 0 0 4px $darkmode-background-first;
   }
   h3 {
-    font-size: 1.5rem;
-    font-weight: 200;
-    color: $darkmode-text-third;
+    font-size: 3rem;
+    font-weight: 400;
+    color: $darkmode-background-first;
   }
 }
 
 .home-bg-img {
   position: absolute;
-  // top: -5rem;
   width: calc(80vh * 16 / 9);
-  height: 110%;
+  // height: 130%;
   background-size: contain;
-  -webkit-animation-duration: 6s;
-  animation-duration: 6s;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   z-index: 2;
@@ -113,9 +112,19 @@
     grid-column-start: 3;
     height: 96vh;
     margin-top: 2vh;
-    .home-img {
+    .home-img,
+    .home-bg-img {
       width: calc(96vh * 16 / 9);
-      transform: translateX(-25%);
+      // transform: translateX(-25%);
+    }
+    .home-text {
+      bottom: 20vh;
+      h1 {
+        font-size: 3rem;
+      }
+      h3 {
+        font-size: 2rem;
+      }
     }
   }
 }

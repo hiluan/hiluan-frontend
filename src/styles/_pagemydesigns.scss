@@ -170,3 +170,12 @@
 .dot-active {
   background-color: $darkmode-text-first;
 }
+
+@media screen and (max-width: 900px) {
+  .page-mydesigns {
+    img {
+      height: 96vh;
+      transform: translateX(-15%);
+    }
+  }
+}

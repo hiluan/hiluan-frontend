@@ -8,6 +8,7 @@
 @import "./pagemydesigns";
 @import "./pageresume";
 @import "./pagenotfound";
+@import "./menubutton";
 
 * {
   margin: 0;
@@ -25,6 +26,7 @@ body {
 }
 
 .App {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   gap: 1rem;

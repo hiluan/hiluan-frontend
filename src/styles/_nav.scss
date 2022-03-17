@@ -183,5 +183,13 @@ li:hover > .nav-list-text {
 @media screen and (max-width: 900px) {
   nav {
     display: none;
+    // transform: translateX(-300%);
+    // grid-column-start: 20;
+    // grid-column-end: 25;
+  }
+
+  .button-menu-active {
+    display: block;
+    grid-column-end: 19;
   }
 }

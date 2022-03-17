@@ -5,7 +5,7 @@
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   padding: 2rem;
   transition: $transition-all-ease;
-
+  overflow-x: hidden;
   .myapp-info {
     padding: 3rem;
     padding-top: 3rem;
@@ -83,10 +83,15 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
-  //   .page-myapps {
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  //   }
+@media screen and (max-width: 900px) {
+  .page-myapps {
+    span {
+      display: inline-block;
+    }
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: inline-block;
+  }
 }

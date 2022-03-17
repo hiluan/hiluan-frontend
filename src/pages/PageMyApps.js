@@ -9,7 +9,7 @@ const MyApp = (props) => (
       </section>
       <h4 className="myapp-tools">
         {props.app.tools.map((tool) => (
-          <span>{tool}</span>
+          <span key={tool}>{tool}</span>
         ))}
       </h4>
 
