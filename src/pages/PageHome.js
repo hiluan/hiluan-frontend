@@ -19,7 +19,7 @@ const Home = () => {
       </section>
       <section className="home-bg-img fadeOut">
         <img
-          src="https://i.ibb.co/NtFG6qW/hiluan-vienna-project.jpg"
+          src="https://i.ibb.co/Y084gPK/hiluan-vienna-project.jpg"
           alt="vienna project - architectural design "
         />
       </section>
