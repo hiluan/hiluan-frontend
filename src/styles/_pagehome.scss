@@ -54,7 +54,8 @@
 .home-bg-img {
   position: absolute;
   width: calc(80vh * 16 / 9);
-  height: 110%;
+  // height: 110%;
+  background-color: $darkmode-text-first;
   align-items: center;
   background-size: contain;
   -webkit-animation-duration: 7s;
