@@ -11,10 +11,10 @@
   color: $darkmode-text-second;
   border-radius: 50%;
   border: none;
-  z-index: 9;
   padding: 0.5rem;
   //   margin: 1rem;
   border: 0.5rem solid $darkmode-text-second;
+  z-index: 9;
 }
 // #menu-button:focus {
 //   background-color: $darkmode-text-second;
@@ -22,15 +22,18 @@
 
 #menu-button {
   display: none;
-  background: $darkmode-text-second;
+  //   background: $darkmode-text-second;
   border-radius: 50%;
+  color: $darkmode-text-second;
+  transition: $transition-all-ease;
+}
+#menu-button:active {
+  background: $darkmode-text-second;
 }
 @media screen and (max-width: 900px) {
   #menu-mobile {
     display: block;
     // transform: translateX(-300%);
-    grid-column-start: 1;
-    grid-column-end: 1;
   }
   #menu-button {
     display: block;

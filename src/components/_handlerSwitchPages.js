@@ -1,5 +1,6 @@
 import { isHomePageAction } from "../store/isHomePageAction";
 import { isIconActiveAction } from "../store/isIconActiveAction";
+import { isMenuActiveAction } from "../store/isMenuActiveAction";
 // import handlerShowSlides from "./_handlerShowSlides";
 
 export const handlerSwitchHomePage = (
@@ -13,6 +14,7 @@ export const handlerSwitchHomePage = (
   // }
   dispatch(isHomePageAction(true));
   dispatch(isIconActiveAction(icon));
+  dispatch(isMenuActiveAction(false));
 };
 export const handlerSwitchOtherPages = (
   dispatch,
@@ -24,4 +26,5 @@ export const handlerSwitchOtherPages = (
   // nIntervId = null;
   dispatch(isHomePageAction(false));
   dispatch(isIconActiveAction(icon));
+  dispatch(isMenuActiveAction(false));
 };

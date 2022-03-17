@@ -8,13 +8,22 @@
   border-radius: 1rem;
   overflow: auto;
   transition: $transition-all-ease;
+
   z-index: 1;
 }
 
 @media screen and (max-width: 900px) {
   .page-others {
-    grid-column-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 20;
+
     height: 96vh;
     margin-top: 2vh;
+    overflow-x: hidden;
+    display: inline-block;
+    white-space: normal;
+    img {
+      display: inline-block;
+    }
   }
 }

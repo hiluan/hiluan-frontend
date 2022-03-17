@@ -21,9 +21,20 @@ const Nav = () => {
 
   const isHomePage = useSelector((state) => state.ultilities.isHomePage);
   const iconActive = useSelector((state) => state.ultilities.iconActive);
+  const isMobileMenuActive = useSelector(
+    (state) => state.ultilities.isMobileMenuActive
+  );
 
   return (
-    <nav className={isHomePage ? "nav-home-page" : "nav-other-pages"}>
+    <nav
+      className={
+        isMobileMenuActive
+          ? "mobile-menu-active"
+          : isHomePage
+          ? "nav-home-page"
+          : "nav-other-pages"
+      }
+    >
       <section className="nav-header">
         <img id="nav-img" className="nav-img" src={myAvatar} alt="" />
         <h1 className="nav-name">Luan Pham</h1>
@@ -53,7 +64,7 @@ const Nav = () => {
             }
             to="/"
           >
-            <BiHomeSmile />
+            <BiHomeSmile className="menu-icon" />
           </Link>
           <Link
             className="nav-list-text"
@@ -77,7 +88,7 @@ const Nav = () => {
             onClick={() => handlerSwitchOtherPages(dispatch, "myApps")}
             to="/apps"
           >
-            <FaAppStore />
+            <FaAppStore className="menu-icon" />
           </Link>
           <Link
             className="nav-list-text"
@@ -101,7 +112,7 @@ const Nav = () => {
             }
             to="/designs"
           >
-            <GiPalette />
+            <GiPalette className="menu-icon" />
           </Link>
           <Link
             className="nav-list-text"
@@ -125,7 +136,7 @@ const Nav = () => {
             onClick={() => handlerSwitchOtherPages(dispatch, "aboutMe")}
             to="/about"
           >
-            <FaRegStar />
+            <FaRegStar className="menu-icon" />
           </Link>
           <Link
             className="nav-list-text"
@@ -143,7 +154,7 @@ const Nav = () => {
             onClick={() => handlerSwitchOtherPages(dispatch, "resume")}
             to="/resume"
           >
-            <FaRegAddressCard />
+            <FaRegAddressCard className="menu-icon" />
           </Link>
           <Link
             className="nav-list-text"
@@ -161,7 +172,7 @@ const Nav = () => {
             onClick={() => handlerSwitchOtherPages(dispatch, "contact")}
             to="/contact"
           >
-            <FaRegCommentDots />
+            <FaRegCommentDots className="menu-icon" />
           </Link>
           <Link
             className="nav-list-text"
