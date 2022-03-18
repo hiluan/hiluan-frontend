@@ -27,27 +27,23 @@ const Nav = () => {
 
   return (
     <nav
-      className={
-        isMobileMenuActive
-          ? "mobile-menu-active"
-          : isHomePage
-          ? "nav-home-page"
-          : "nav-other-pages"
-      }
+      className={`"fade" ${isMobileMenuActive ? "mobile-menu-active" : ""} ${
+        isHomePage ? "nav-home-page" : "nav-other-pages"
+      }`}
     >
       <section className="nav-header">
         <img id="nav-img" className="nav-img" src={myAvatar} alt="" />
         <h1 className="nav-name">Luan Pham</h1>
         <h3>- MArch -</h3>
-        {isHomePage && (
-          <a
-            target="_blank"
-            className="btn btn-main nav-download-resume"
-            href="https://drive.google.com/file/d/1V0znK9bh2IZNlOctL5aQAFJG4mUBcjtE/view?usp=sharing"
-          >
-            Download My Resume
-          </a>
-        )}
+        <a
+          target="_blank"
+          className={`btn btn-main ${isHomePage ? "nav-download-resume" : ""} ${
+            isMobileMenuActive ? "nav-download-resume" : ""
+          }`}
+          href="https://drive.google.com/file/d/1V0znK9bh2IZNlOctL5aQAFJG4mUBcjtE/view?usp=sharing"
+        >
+          Download My Resume
+        </a>
       </section>
       <ul className="nav-list">
         <li className="nav-list-item">

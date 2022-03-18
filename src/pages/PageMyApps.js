@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import infoMyApps from "../components/_infoMyApps";
 
 const MyApp = (props) => (
@@ -38,13 +39,20 @@ const MyApp = (props) => (
 );
 
 const MyApps = () => {
+  const isMobileMenuActive = useSelector(
+    (state) => state.ultilities.isMobileMenuActive
+  );
   const appList = () => {
     return infoMyApps.map((app) => {
       return <MyApp app={app} key={app.name} />;
     });
   };
   return (
-    <section className="page-others page-myapps fade">
+    <section
+      className={`page-others page-myapps fade ${
+        isMobileMenuActive ? "page-inactive" : ""
+      }`}
+    >
       {/* <h1>My Apps</h1> */}
       {appList()}
     </section>

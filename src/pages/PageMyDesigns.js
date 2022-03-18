@@ -55,6 +55,9 @@ const MyDesigns = () => {
   const dispatch = useDispatch();
   const location = useLocation();
 
+  const isMobileMenuActive = useSelector(
+    (state) => state.ultilities.isMobileMenuActive
+  );
   const toNextSlide = () => {
     handlerAllSlidesInactive(slides);
     console.log(";;;;;;;;;;;;");
@@ -115,7 +118,11 @@ const MyDesigns = () => {
   };
   // x
   return (
-    <section className="page-others page-mydesigns">
+    <section
+      className={`page-others page-mydesigns fade ${
+        isMobileMenuActive ? "page-inactive" : ""
+      }`}
+    >
       <section className="slideshow-container">{designList()}</section>
       <section className="slideshow-arrows">
         <a className="prev" onClick={toPrevSlide}>

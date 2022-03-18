@@ -1,7 +1,15 @@
 import { BiMailSend, BiPhoneCall, BiMap } from "react-icons/bi";
+import { useSelector } from "react-redux";
 const Contact = () => {
+  const isMobileMenuActive = useSelector(
+    (state) => state.ultilities.isMobileMenuActive
+  );
   return (
-    <section className="page-others page-contact fade">
+    <section
+      className={`page-others page-contact fade ${
+        isMobileMenuActive ? "page-inactive" : ""
+      }`}
+    >
       <section className="section-basicinfo">
         <ul className="info-detail-group">
           <li className="info-detail">

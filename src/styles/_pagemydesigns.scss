@@ -172,11 +172,18 @@
   background-color: $darkmode-text-first;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
   .page-mydesigns {
+    span {
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
     img {
-      height: 96vh;
+      height: 100vh;
       transform: translateX(-15%);
+    }
+    .slideshow-dots {
+      top: 2rem;
     }
   }
 }

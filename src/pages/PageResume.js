@@ -43,8 +43,15 @@ const Resume = () => {
       return <WorkExp exp={exp} key={exp.company} />;
     });
   };
+  const isMobileMenuActive = useSelector(
+    (state) => state.ultilities.isMobileMenuActive
+  );
   return (
-    <section className="page-others page-resume fade">
+    <section
+      className={`page-others page-resume fade ${
+        isMobileMenuActive ? "page-inactive" : ""
+      }`}
+    >
       <section className="resume-info">
         <section>
           <section className="resume-title">

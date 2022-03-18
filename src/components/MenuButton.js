@@ -13,6 +13,8 @@ const MenuButton = () => {
   return (
     <a onClick={handlerToggleMenu} id="menu-mobile">
       <HiOutlineMenu id="menu-button" />
+      {/* <span>open</span>
+      <span>menu</span> */}
     </a>
   );
 };
