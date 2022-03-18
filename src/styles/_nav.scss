@@ -290,14 +290,18 @@ li:hover > .nav-list-text {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
     }
-    li:hover > .nav-list-icon {
-      transform: translateY(-0.5rem);
-      color: $allmodes-text-second;
-    }
+    // li > .nav-list-icon {
+    //   transform: translateY(-0.5rem);
+    //   color: $allmodes-text-second;
+    // }
 
-    li:hover > .nav-list-text {
+    li > .nav-list-text {
       opacity: 1;
       transform: translateY(-0.25rem);
+      padding-bottom: 1rem;
+      span {
+        font-size: 1.5rem;
+      }
     }
   }
 }

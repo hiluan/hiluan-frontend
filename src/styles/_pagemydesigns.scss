@@ -185,5 +185,13 @@
     .slideshow-dots {
       top: 2rem;
     }
+    .mydesign-title {
+      top: 0;
+      right: 1rem;
+      transform: translateY(240%);
+      -webkit-transform: translateY(240%);
+      text-align: right;
+      z-index: 2;
+    }
   }
 }

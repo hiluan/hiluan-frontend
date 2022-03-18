@@ -8,7 +8,6 @@
   height: 80vh;
   margin-top: 10vh;
   border-radius: 1rem;
-  overflow: auto;
   position: relative;
   transition: $transition-all-ease;
   //   width: 100%;
@@ -56,7 +55,6 @@
   // width: calc(100vh * 16 / 9);
   // height: 110%;
   // top: 0;
-
   background-size: contain;
   -webkit-animation-duration: 7s;
   animation-duration: 7s;
@@ -130,15 +128,21 @@
     grid-column-end: 21;
     height: 100vh;
     margin-top: 0;
-    background: none;
+    // background: white;
     border-radius: 0;
-    .home-img,
-    .home-bg-img {
+    .home-img {
       width: calc(100vh * 16 / 9);
       // height: 100vh;
       transform: translateX(-25%);
     }
-
+    .home-bg-img {
+      transform: translateX(-25%);
+      background-size: cover;
+      background-color: $darkmode-text-first;
+      top: 0;
+      bottom: 0;
+      // margin: auto;
+    }
     .home-text {
       bottom: 30vh;
       h1 {
@@ -147,6 +151,10 @@
       h3 {
         font-size: 2rem;
       }
+    }
+    .home-subtitle {
+      bottom: 10vh;
+      font-size: 1.5rem;
     }
   }
 }

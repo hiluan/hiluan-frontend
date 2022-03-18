@@ -85,6 +85,11 @@
 
 @media screen and (max-width: 768px) {
   .page-myapps {
+    padding-top: 0;
+    .myapp-info {
+      padding: 0;
+      padding-top: 5rem;
+    }
     span {
       display: inline-block;
     }

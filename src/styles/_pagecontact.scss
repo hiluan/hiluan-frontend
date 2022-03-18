@@ -16,7 +16,6 @@
 
   li {
     display: flex;
-
     margin: 2rem 5rem;
   }
   .info-icon {
@@ -127,4 +126,17 @@ textarea {
 [type="submit"]:hover {
   background: $allmodes-text-third;
   // box-shadow: $boxshadow-inset-outline-active;
+}
+
+@media screen and (max-width: 768px) {
+  .page-contact {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    li {
+      margin: 2rem 0;
+    }
+    form {
+      padding: 0;
+      margin: 0;
+    }
+  }
 }

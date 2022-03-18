@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   margin: 0;
-  justify-items: center;
+  // justify-items: center;
 }
 
 .section-photo {
@@ -101,5 +101,44 @@
   .intro-details a {
     // margin: auto;
     // width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-intro {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .intro-details {
+    margin: 0 2rem;
+  }
+  .section-photo {
+    // margin: 0
+  }
+  .intro-details a {
+    // margin: auto;
+    width: 100%;
+  }
+
+  .intro-title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .intro-descriptions {
+    margin: 1.5rem 0;
+  }
+  .intro-description {
+    font-size: 1.5rem;
+  }
+
+  .section-basicinfo ul {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    font-size: 1.5rem;
+    color: $darkmode-text-second;
+    width: 90%;
+    margin: auto;
+    li {
+      padding: 1rem 0;
+    }
   }
 }
