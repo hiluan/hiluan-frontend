@@ -1,4 +1,4 @@
-import { HiOutlineMenu } from "react-icons/hi";
+import { IoIosCloseCircleOutline, IoIosMenu } from "react-icons/io";
 import { useDispatch, useSelector } from "react-redux";
 import { isMenuActiveAction } from "../store/isMenuActiveAction";
 
@@ -12,7 +12,11 @@ const MenuButton = () => {
   };
   return (
     <a onClick={handlerToggleMenu} id="menu-mobile">
-      <HiOutlineMenu id="menu-button" />
+      {mobileMenuStatus ? (
+        <IoIosCloseCircleOutline id="menu-button" />
+      ) : (
+        <IoIosMenu id="menu-button" />
+      )}
       {/* <span>open</span>
       <span>menu</span> */}
     </a>
