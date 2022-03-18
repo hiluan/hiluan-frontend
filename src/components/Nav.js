@@ -27,7 +27,7 @@ const Nav = () => {
 
   return (
     <nav
-      className={`"fade" ${isMobileMenuActive ? "mobile-menu-active" : ""} ${
+      className={`fade ${isMobileMenuActive ? "mobile-menu-active" : ""} ${
         isHomePage ? "nav-home-page" : "nav-other-pages"
       }`}
     >
