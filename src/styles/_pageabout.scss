@@ -43,9 +43,7 @@
 .intro-title {
   font-size: 4rem;
   line-height: 6rem;
-
   font-weight: 500;
-
   color: $darkmode-text-first;
 }
 .intro-descriptions {
@@ -56,6 +54,7 @@
   font-weight: 300;
   line-height: 3rem;
   color: $darkmode-text-second;
+  padding: 1rem 0;
 }
 
 .intro-details a {
@@ -95,6 +94,73 @@
 .info-detail-bold {
   font-weight: 400;
   color: $darkmode-text-first;
+}
+
+.about-recommendations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+.about-recommendation {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  img {
+    border-radius: 50%;
+    width: 15rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: solid 1.5px $darkmode-text-first;
+    transition: $transition-all-ease;
+  }
+  img:hover {
+    filter: brightness(125%);
+  }
+  p {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+    color: $darkmode-text-first;
+    background-color: $darkmode-background-first;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: $transition-all-ease;
+  }
+  p:hover {
+    background-color: $allmodes-text-third;
+  }
+
+  span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    // padding: 0.5rem;
+    color: $darkmode-text-second;
+  }
+  span.recommendation-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $darkmode-text-first;
+  }
+  span.recommendation-contact {
+    color: $darkmode-text-last;
+    transition: $transition-all-ease;
+  }
+  span.recommendation-contact:hover {
+    color: $darkmode-text-first;
+  }
+  span.recommendation-laurel {
+    font-size: 5rem;
+    color: $darkmode-text-third;
+    .recommendation-righttwing {
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -139,6 +205,11 @@
     margin: auto;
     li {
       padding: 1rem 0;
+    }
+  }
+  .about-recommendation {
+    img {
+      width: 12rem;
     }
   }
 }

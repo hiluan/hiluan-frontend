@@ -26,7 +26,7 @@ export const workExperience = [
       "Overseeing operations of the company and the work of executives.",
     ],
     contactPerson:
-      "Contact Person: Luca Lu - VMilano & iounica Founder, CEO | luca@vmilano.com | +49 1765678945",
+      "Contact Person: Luca Lu - Founder & CEO of VMilano Fashion & iounica.com | luca@vmilano.com | +49 176 45678956",
   },
   {
     position: "Design Architect",

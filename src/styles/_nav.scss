@@ -53,6 +53,8 @@ nav img {
   border-radius: 50%;
   box-shadow: $boxshadow-inset;
   transition: $transition-all-ease;
+  padding: 0.5rem;
+  border: solid 2px $allmodes-text-first;
 }
 nav img:hover {
   filter: brightness(125%);
@@ -242,6 +244,9 @@ li:hover > .nav-list-text {
       border-radius: 50%;
       box-shadow: $boxshadow-inset;
       transition: $transition-all-ease;
+
+      padding: 1rem;
+      border: solid 2px $allmodes-text-first;
     }
     img:hover {
       filter: brightness(125%);
