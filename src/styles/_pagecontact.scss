@@ -29,6 +29,19 @@
     flex-direction: column;
     padding-left: 2rem;
   }
+  h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: $allmodes-text-first;
+    // text-align: center;
+    padding: 1rem 0rem;
+  }
+  p {
+    color: $darkmode-text-first;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 1rem 0;
+  }
 }
 form {
   display: flex;
@@ -108,7 +121,8 @@ textarea {
   resize: vertical;
 }
 
-[type="submit"] {
+[type="submit"],
+[type="button"] {
   width: 100%;
   background: $allmodes-text-last;
   border-radius: 0.5rem;
@@ -123,7 +137,8 @@ textarea {
 
   cursor: pointer;
 }
-[type="submit"]:hover {
+[type="submit"]:hover,
+[type="button"]:hover {
   background: $allmodes-text-third;
   // box-shadow: $boxshadow-inset-outline-active;
 }
