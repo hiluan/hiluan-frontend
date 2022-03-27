@@ -20,18 +20,18 @@ const SectionIntro = () => {
           <p className="intro-description">
             Currently working for my startup: Cinciao.com, which allows
             celebrities to send personalized video messages to fans in Vietnam.
-            Before that, I worked in architecture and then fashion industry.
+            Before that, I worked in the architecture and fashion industry.
           </p>
           <p className="intro-description">
             Technology always fascinates me because one great and well executed
             idea could change millions lives, unlike fashion or architecture
             where one idea could help only dozens. This is one of the reasons I
-            want to swith my career path to become a software engineer.
+            want to switch my career path to become a software engineer.
           </p>
           <p className="intro-description">
             My name is Luan Pham. I’m passionate about creating things that
-            change the world, things that change people's lives. I will do
-            whatever it takes to make it.
+            could change the world, things that could change people's lives. I
+            will do whatever it takes to make it.
           </p>
           <p className="intro-description">
             Get in touch to find the next thing together!
