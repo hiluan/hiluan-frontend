@@ -9,7 +9,7 @@ const SectionBasicInfo = () => {
         <li className="info-detail">
           <span className="info-detail-bold">Email</span>
           <span className="info-detail-regular">: luan@cinciao.com</span>
-        </li>{" "}
+        </li>
         <li className="info-detail">
           <span className="info-detail-bold">Location</span>
           <span className="info-detail-regular">: San Jose, CA, USA</span>

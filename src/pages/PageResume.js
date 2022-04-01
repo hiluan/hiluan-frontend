@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { workExperience } from "../components/_infoResume";
-import { isSlidesPlayingAction } from "../store/isSlidesPlayingAction";
 
 const WorkExp = (props) => (
   <section className="exp-info">
     <section className="exp-title">
       <h3 className="h3-bold">{props.exp.position}</h3>
-      <h3>{props.exp.company}</h3>
+      <h3>
+        <a href={`https://${props.exp.website}`}>{props.exp.company}</a>
+      </h3>
     </section>
     <p className="exp-description">{props.exp.companyDescription}</p>
     <p className="exp-timeLocation">
@@ -18,6 +18,7 @@ const WorkExp = (props) => (
         <li className="exp-task">{task}</li>
       ))}
     </ul>
+
     <p className="exp-contactPerson">{props.exp.contactPerson}</p>
   </section>
 );
@@ -68,15 +69,17 @@ const Resume = () => {
             <div></div>
           </section>
           <section className="resume-body">
-            <section className="exp-title">
+            {/* <section className="exp-title">
               <h3 className="h3-bold">HCMC University of Architecture</h3>
-              <h3>Bachelor of Architecture</h3>
-            </section>
+              <h3>Bachelor Degree</h3>
+            </section> */}
             <section className="resume-school">
-              <h3 className="h3-bold">
-                Carinthia University of Applied Sciences
+              <h3 className="h3-bold">Master Degree</h3>
+              <h3>
+                <a href="https://www.fh-kaernten.at/en/">
+                  Carinthia University of Applied Sciences
+                </a>
               </h3>
-              <h3>Master of Architecture</h3>
             </section>
           </section>
         </section>
@@ -99,7 +102,11 @@ const Resume = () => {
             <div></div>
           </section>
           <section className="resume-body">
-            <h3>Munich International Friends</h3>
+            <h3>
+              <a href="https://www.facebook.com/groups/munich.international.friends/">
+                Munich International Friends
+              </a>
+            </h3>
             <p className="">
               Organizing meetups, games, indoor and outdoor activities for
               international expats and friends in Munich, Germany.

@@ -56,7 +56,15 @@
     line-height: 2.5rem;
     margin-left: 1.8rem;
   }
+  a {
+    text-decoration: none;
+    color: $allmodes-text-mid;
+    transition: $transition-all-ease;
+  }
 
+  a:hover {
+    color: $allmodes-text-first;
+  }
   .resume-info {
     padding: 3rem;
     padding-top: 3rem;
