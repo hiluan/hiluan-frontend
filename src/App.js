@@ -15,6 +15,8 @@ import About from "./pages/PageAbout";
 import Resume from "./pages/PageResume";
 import Contact from "./pages/PageContact";
 import PageNotFound from "./pages/PageNotFound";
+import SocialLinks from "./components/SocialLinks";
+import PageName from "./components/PageName";
 
 function App() {
   const location = useLocation();
@@ -44,7 +46,9 @@ function App() {
   return (
     <div className="App dark-mode">
       <Nav />
+      <SocialLinks />
       <MenuButton />
+      <PageName />
       <Routes>
         <Route path="*" element={<PageNotFound />} />
         <Route path="/" element={<Home />} />

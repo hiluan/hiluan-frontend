@@ -1,0 +1,33 @@
+@import "./config";
+
+#social-links {
+  position: absolute;
+  bottom: 2vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 5rem;
+  color: $allmodes-text-first;
+
+  z-index: 99;
+  .social-icon {
+    padding: 0rem 1rem;
+  }
+  a {
+    color: $allmodes-text-mid;
+    text-decoration: none;
+    transition: $transition-all-ease;
+  }
+
+  a:hover {
+    color: $allmodes-text-first;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #social-links {
+    a {
+      color: $allmodes-text-second;
+    }
+  }
+}
