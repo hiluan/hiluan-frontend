@@ -1,7 +1,7 @@
 export const workExperience = [
   {
-    position: "Chief Operating Officer",
-    // position: "Full Stack Developer and Solutions Architect",
+    // position: "Chief Operating Officer",
+    position: "Full Stack Developer and Solutions Architect",
 
     company: "Cinciao Vietnam",
     companyDescription:
@@ -17,8 +17,8 @@ export const workExperience = [
     website: "cinciao.vn",
   },
   {
-    position: "Chief Operating Officer",
-    // position: "Full Stack Developer and Solutions Architect",
+    // position: "Chief Operating Officer",
+    position: "Full Stack Developer and Solutions Architect",
 
     company: "VMilano Fashion",
     companyDescription:
