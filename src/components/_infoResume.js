@@ -1,6 +1,6 @@
 export const workExperience = [
   {
-    position: "Chief Operating Officer",
+    position: "Full Stack Developer and Solutions Architect",
     company: "Cinciao Vietnam",
     companyDescription:
       "Cinciao is a platform as a service startup. Cinciao.vn allows Vietnamese celebrities to send personalized video messages to their fans in Vietnam.",
@@ -15,7 +15,7 @@ export const workExperience = [
     website: "cinciao.vn",
   },
   {
-    position: "Chief Operating Officer",
+    position: "Full Stack Developer and Solutions Architect",
     company: "VMilano Fashion",
     companyDescription:
       "VMilano is a B2B fashion company in Munich. VMilano gives the local shops a chance to provide their customers the best Italian styles to date.",
