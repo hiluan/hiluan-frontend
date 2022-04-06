@@ -9,7 +9,7 @@ const langCSS = "CSS";
 const Shopify = "Shopify";
 const infoMyApps = [
   {
-    name: "Starlite - Real-Time Market Data WebApp",
+    name: "Starlite: Real-Time Market Data",
     tools: [MongoDB, ExpressJS, ReactJS, NodeJS, Sass],
     description:
       "Startlite, a WebApp with real-time market data, lets you follow your favorite stocks, create your own portfolio and test your trades and strategies.",
@@ -18,7 +18,7 @@ const infoMyApps = [
     linkToApp: "https://starlite.netlify.app",
   },
   {
-    name: "Cinciao.com - Platform As A Service",
+    name: "Cinciao.vn: Platform As A Service",
     tools: [JavaScript, langHTML, langCSS, Shopify],
     description:
       "Cinciao allows Vietnamese celebrities to send personalized video messages to their fans and to FaceTime directly with them, anytime and anywhere.",
@@ -27,7 +27,7 @@ const infoMyApps = [
     linkToApp: "https://cinciao.com",
   },
   {
-    name: "Waves - Lofi Chillhop Music Player",
+    name: "Waves: Lofi Chillhop Music Player",
     tools: [ReactJS, Sass],
     description:
       "Waves is a music player with a simple but elegant UI. With a library of Chillhop Music, you can play it whenever you need a chill moment in life.",
@@ -35,7 +35,7 @@ const infoMyApps = [
     linkToApp: "https://waves-lofimusic.netlify.app",
   },
   {
-    name: "iounica.com - Online Shop for Italian Fashion",
+    name: "iounica.com: Online Fashion Shop",
     tools: [JavaScript, langHTML, langCSS, Shopify],
     description:
       "iounica, a B2C online shop integrated with Shopify, gives its German and European customers a chance to purchase the best Italian styles to date.",

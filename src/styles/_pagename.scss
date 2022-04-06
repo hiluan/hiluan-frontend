@@ -7,19 +7,20 @@
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   font-size: 2rem;
-  font-weight: 200;
   color: $allmodes-text-third;
 
   z-index: 99;
+  h3 {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+  }
   .page-name {
     padding: 0rem 1rem;
   }
 }
 
-// @media screen and (max-width: 768px) {
-//   #social-links {
-//     a {
-//       color: $allmodes-text-second;
-//     }
-//   }
-// }
+@media screen and (max-width: 768px) {
+  .page-name-container {
+    display: none;
+  }
+}
