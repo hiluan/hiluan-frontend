@@ -6,7 +6,7 @@ const MyApp = (props) => (
     <section>
       <section className="myapp-title">
         <h2 className="myapp-name">{props.app.name} </h2>
-        <div></div>
+        {/* <div></div> */}
       </section>
       <h4 className="myapp-tools">
         {props.app.tools.map((tool) => (
