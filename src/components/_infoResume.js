@@ -10,8 +10,8 @@ export const workExperience = [
     location: "San Jose, CA, USA",
     tasks: [
       "Built the startup from idea to realization.",
-      "Designed and developed an MVP integrated with Shopify. Designed and implemented business strategies, plans andprocedures.",
-      "Coordinated and built relationships with Vietnamese celebrities and their fans.",
+      "Designed and developed an MVP integrated with Shopify for the startup.",
+      "Designed and implemented business strategies, plans andprocedures. Coordinated and built relationships with Vietnamese celebrities and their fans.",
     ],
     contactPerson: "",
     website: "cinciao.vn",
@@ -26,8 +26,8 @@ export const workExperience = [
     time: "12/2014 - 06/2020",
     location: "Munich, Germany",
     tasks: [
+      "Developed two Shopify integrated online shops.",
       "Designed and implemented business operations on all sale channels: B2B shops in Munich, Berlin, Leipzig, Vienna; B2B online shop on vmilano.com; B2C online shops on iounica.com, Amazon.de, Amazon.it, Amazon.fr, Amazon.es, Amazon.co.uk, Amazon.com.",
-      "Established policies that promote company culture and vision.",
       "Oversaw operations of the company and the work of executives.",
     ],
     contactPerson:
