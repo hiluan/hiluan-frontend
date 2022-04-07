@@ -9,7 +9,7 @@ const langCSS = "CSS";
 const Shopify = "Shopify";
 const infoMyApps = [
   {
-    name: "Starlite: Real-Time Market Data",
+    name: "Starlite: Online Trading Platform",
     tools: [MongoDB, ExpressJS, ReactJS, NodeJS, Sass],
     description:
       "Startlite, a WebApp with real-time market data, lets you follow your favorite stocks, create your own portfolio and test your trades and strategies.",
