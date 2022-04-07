@@ -5,7 +5,9 @@ const MyApp = (props) => (
   <section className="myapp-info">
     <section>
       <section className="myapp-title">
-        <h2 className="myapp-name">{props.app.name} </h2>
+        <h2 className="myapp-name">
+          {props.app.name}:<span> {props.app.nameDetail}</span>
+        </h2>
         {/* <div></div> */}
       </section>
       <h4 className="myapp-tools">

@@ -25,6 +25,10 @@
     color: $darkmode-text-first;
     font-size: 4rem;
     font-weight: 400;
+    span {
+      background: transparent;
+      color: $darkmode-text-third;
+    }
   }
   h4 {
     color: $darkmode-text-second;
