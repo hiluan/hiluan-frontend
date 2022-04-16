@@ -27,14 +27,18 @@ const techSkills = [
   "Express.JS",
   "React.JS",
   "Node.JS",
+  "React Native",
   "JavaScript",
   "HTML",
   "CSS",
   "Sass",
   "Git",
   "API’s",
+  "OOP",
+  "Web Accessibility",
   "Shopify",
   "Adobe Photoshop",
+  "Adobe InDesign",
   "Adobe XD",
 ];
 

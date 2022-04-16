@@ -40,7 +40,7 @@ const Nav = () => {
           className={`btn btn-main ${isHomePage ? "nav-download-resume" : ""} ${
             isMobileMenuActive ? "nav-download-resume" : ""
           }`}
-          href="https://drive.google.com/file/d/1zAqXkh-fcSPbHJ0r8BzCPtcS50xH93Sh/view?usp=sharing"
+          href="https://drive.google.com/file/d/1D7X6pK8PF5Jc83ySaprX73T0r9CF65Jo/view?usp=sharing"
           // href="https://drive.google.com/file/d/1MpjCmSG-xJmgMEwhVqoepIVGo5lveSLy/view?usp=sharing" //coo
         >
           Download My Resume

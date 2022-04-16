@@ -15,12 +15,11 @@ const Home = () => {
       <section className="home-text">
         <h3>FULLSTACK SOFTWARE ENGINEER</h3>
         <section className="home-header">
-          <h1>Hello world!</h1>
           <h1>
-            I’m
-            <span className="home-name"> Luan Pham</span>.
+            Hi, I’m
+            <span className="home-name"> Luan</span>.
           </h1>
-          <h1>Welcome to my special place!</h1>
+          <h1>Welcome to my world!</h1>
         </section>
       </section>
       <section className="home-bg-img fadeOut">
