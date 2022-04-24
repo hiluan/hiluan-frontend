@@ -23,12 +23,13 @@ const WorkExp = (props) => (
   </section>
 );
 const techSkills = [
-  "MongoDB",
-  "Express.JS",
   "React.JS",
+  "Redux",
   "Node.JS",
   "React Native",
   "JavaScript",
+  "MongoDB",
+  "Express.JS",
   "HTML",
   "CSS",
   "Sass",
@@ -69,6 +70,19 @@ const Resume = () => {
       <section className="resume-info">
         <section className="resume-section">
           <section className="resume-title">
+            <h2>technical skills</h2>
+            <div></div>
+          </section>
+          <section className="resume-body">
+            <h4 className="resume-skills">
+              {techSkills.map((skill) => (
+                <span>{skill}</span>
+              ))}
+            </h4>
+          </section>
+        </section>
+        <section className="resume-section">
+          <section className="resume-title">
             <h2>education</h2>
             <div></div>
           </section>
@@ -87,20 +101,7 @@ const Resume = () => {
             </section>
           </section>
         </section>
-        <section className="resume-section">
-          <section className="resume-title">
-            <h2>technical skills</h2>
-            <div></div>
-          </section>
-          <section className="resume-body">
-            <h4 className="resume-skills">
-              {techSkills.map((skill) => (
-                <span>{skill}</span>
-              ))}
-            </h4>
-          </section>
-        </section>
-        <section className="resume-section">
+        {/* <section className="resume-section">
           <section className="resume-title">
             <h2>organizations</h2>
             <div></div>
@@ -116,7 +117,7 @@ const Resume = () => {
               international expats and friends in Munich, Germany.
             </p>
           </section>
-        </section>
+        </section> */}
         <section className="resume-section">
           <section className="resume-title">
             <h2>languages</h2>
