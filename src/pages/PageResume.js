@@ -22,25 +22,68 @@ const WorkExp = (props) => (
     <p className="exp-contactPerson">{props.exp.contactPerson}</p>
   </section>
 );
+
+const TechSkill = (props) => {
+  const skillArr = props.skill.split("---");
+  const skillName = skillArr[0];
+  const skillImg = skillArr[1];
+
+  return (
+    <li className="skill-group">
+      <img src={skillImg} alt={skillName} />
+      <span>{skillName}</span>
+    </li>
+  );
+};
+
+const techLanguages = [
+  "JavaScript---https://img.stackshare.io/service/1209/javascript.jpeg",
+  "HTML---https://img.stackshare.io/service/2538/kEpgHiC9.png",
+  "CSS---https://img.stackshare.io/service/6727/css.png",
+];
+
+const techToolsFrameworks = [
+  "React.JS---https://img.stackshare.io/service/1020/OYIaJ1KK.png",
+  "Redux---https://img.stackshare.io/service/4074/13142323.png",
+  "Node.JS---https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png",
+  "React Native---https://img.stackshare.io/service/2699/KoK6gHzp.jpg",
+  "MongoDB---https://img.stackshare.io/service/1030/leaf-360x360.png",
+  "Express.JS---https://img.stackshare.io/service/1163/hashtag.png",
+  "Sass---https://img.stackshare.io/service/1171/jCR2zNJV.png",
+  "Heroku---https://img.stackshare.io/service/133/3wgIDj3j.png",
+  "Git---https://img.stackshare.io/service/1046/git.png",
+  "API’s---https://alexanderfo.com/wp-content/uploads/2019/12/1139px-Cloud-API-Logo.svg_.png",
+  "OOP---https://miro.medium.com/max/300/0*goJuBKoyL-zZX4RB.png",
+  "Web Accessibility---https://www.logolynx.com/images/logolynx/1b/1bbc6b02ac7a0866d405eb3f9820e14b.png",
+  "Shopify---https://img.stackshare.io/service/266/xDoyHgZW_400x400.png",
+];
+
+const designTools = [
+  "Adobe Photoshop---https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_Mobile_icon.svg/246px-Adobe_Photoshop_Mobile_icon.svg.png",
+  "Adobe InDesign---https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/4_Indesign_Adobe_logo_logos-512.png",
+  "Adobe XD---https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/22b74bf9-830b-4bad-88ee-871368b6f6a3.png",
+];
 const techSkills = [
-  "React.JS",
-  "Redux",
-  "Node.JS",
-  "React Native",
-  "JavaScript",
-  "MongoDB",
-  "Express.JS",
-  "HTML",
-  "CSS",
-  "Sass",
-  "Git",
-  "API’s",
-  "OOP",
-  "Web Accessibility",
-  "Shopify",
-  "Adobe Photoshop",
-  "Adobe InDesign",
-  "Adobe XD",
+  "React.JS---https://img.stackshare.io/service/1020/OYIaJ1KK.png",
+  "Redux---https://img.stackshare.io/service/4074/13142323.png",
+  "Node.JS---https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png",
+  "JavaScript---https://img.stackshare.io/service/1209/javascript.jpeg",
+  "HTML---https://img.stackshare.io/service/2538/kEpgHiC9.png",
+  "CSS---https://img.stackshare.io/service/6727/css.png",
+  "React Native---https://img.stackshare.io/service/2699/KoK6gHzp.jpg",
+  "MongoDB---https://img.stackshare.io/service/1030/leaf-360x360.png",
+  "Express.JS---https://img.stackshare.io/service/1163/hashtag.png",
+  "Sass---https://img.stackshare.io/service/1171/jCR2zNJV.png",
+  "Heroku---https://img.stackshare.io/service/133/3wgIDj3j.png",
+  "Git---https://img.stackshare.io/service/1046/git.png",
+  "API’s---https://alexanderfo.com/wp-content/uploads/2019/12/1139px-Cloud-API-Logo.svg_.png",
+  "OOP---https://miro.medium.com/max/300/0*goJuBKoyL-zZX4RB.png",
+  "Web Accessibility---https://www.logolynx.com/images/logolynx/1b/1bbc6b02ac7a0866d405eb3f9820e14b.png",
+  "Shopify---https://img.stackshare.io/service/266/xDoyHgZW_400x400.png",
+
+  "Adobe Photoshop---https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_Mobile_icon.svg/246px-Adobe_Photoshop_Mobile_icon.svg.png",
+  "Adobe InDesign---https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/4_Indesign_Adobe_logo_logos-512.png",
+  "Adobe XD---https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/22b74bf9-830b-4bad-88ee-871368b6f6a3.png",
 ];
 
 const Resume = () => {
@@ -52,6 +95,7 @@ const Resume = () => {
   const isMobileMenuActive = useSelector(
     (state) => state.ultilities.isMobileMenuActive
   );
+
   return (
     <section
       className={`page-others page-resume fade ${
@@ -74,11 +118,34 @@ const Resume = () => {
             <div></div>
           </section>
           <section className="resume-body">
-            <h4 className="resume-skills">
-              {techSkills.map((skill) => (
-                <span>{skill}</span>
-              ))}
-            </h4>
+            <section className="resume-skills-container">
+              <h3 className="h3-bold">Languages</h3>
+              <ul className="resume-skills">
+                {techLanguages.map((skill) => (
+                  <TechSkill skill={skill} key={skill} />
+                  // <span>{skill}</span>
+                ))}
+              </ul>
+            </section>
+            <section className="resume-skills-container">
+              <h3 className="h3-bold">Tools / Frameworks</h3>
+              <ul className="resume-skills">
+                {techToolsFrameworks.map((skill) => (
+                  <TechSkill skill={skill} key={skill} />
+                  // <span>{skill}</span>
+                ))}
+              </ul>
+            </section>
+            <section className="resume-skills-container">
+              <h3 className="h3-bold">Design Tools</h3>
+
+              <ul className="resume-skills">
+                {designTools.map((skill) => (
+                  <TechSkill skill={skill} key={skill} />
+                  // <span>{skill}</span>
+                ))}
+              </ul>
+            </section>
           </section>
         </section>
         <section className="resume-section">
