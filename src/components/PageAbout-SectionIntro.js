@@ -23,10 +23,10 @@ const SectionIntro = () => {
             Before that, I worked in the architecture and fashion industry.
           </p>
           <p className="intro-description">
-            Technology always fascinates me because one great and well executed
-            idea could change millions lives, unlike fashion or architecture
+            Technology always fascinates me because one great and well-executed
+            idea could change millions of lives, unlike fashion or architecture
             where one idea could help only dozens. This is one of the reasons I
-            want to switch my career path to become a software engineer.
+            want to switch my career path to becoming a software engineer.
           </p>
           <p className="intro-description">
             My name is Luan Pham. I’m passionate about creating things that

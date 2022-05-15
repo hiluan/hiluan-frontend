@@ -4,7 +4,7 @@ const infoMyDesigns = [
     name: "design production for iounica.com",
     tools: ["Photoshop"],
     description:
-      "This graphic design belonged to one of the design solutions which included fashion, photography, design coordination altogether.",
+      "This graphic design belonged to one of the design solutions which included fashion, photography, and design coordination altogether.",
     imgUrl: "https://i.ibb.co/jhF4Q0G/hiluan-skizzenhaus-iounica.jpg",
   },
   {

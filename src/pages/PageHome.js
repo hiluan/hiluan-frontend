@@ -41,8 +41,8 @@ const Home = () => {
       </section>
       <section className="home-subtitle">
         <p>
-          This is an architecture concept of a residential and commmercial
-          complex, located in Vienna, I developed from scracht to this
+          This is an architectural concept of a residential and commercial
+          complex, located in Vienna, I developed from scratch to this
           animation, all by myself.
         </p>
       </section>
