@@ -4,7 +4,7 @@ Portfolio Site including links to my projects and ways to get in contact with me
 
 **Link to project:** https://hiluan.dev/
 
-![alt tag](https://i.ibb.co/Vq1c8XN/hiluan-homepage-800.gif)
+![alt tag](https://github.com/hiluan/hiluan/blob/main/images/hiluan-homepage-800.gif)
 
 ## How It's Made:
 
