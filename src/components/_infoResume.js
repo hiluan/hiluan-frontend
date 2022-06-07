@@ -17,7 +17,7 @@ export const workExperience = [
   },
   {
     // position: "Chief Operating Officer",
-    position: "Full Stack Developer and Solutions Architect",
+    position: "Software Engineer and Solutions Architect",
 
     company: "Cinciao Vietnam",
     companyDescription:
@@ -25,9 +25,9 @@ export const workExperience = [
     time: "July 2020 - Present",
     location: "San Jose, CA, USA",
     tasks: [
-      "Built the startup from idea to realization.",
-      "Designed and developed an MVP integrated with Shopify (Fullstack Web App, UX and UI included.)",
-      "Designed and implemented business strategies, plans and procedures. Coordinated and built relationships with Vietnamese celebrities and their fans.",
+      "Designed and developed an MVP integrated with Shopify (Fullstack Web App, UX, and UI included.)",
+      "Increased over 160% monthly users MoM by enhancing UX and UI.",
+      "Helped onboard 1000+ celebrities, modified and managed their in-app profiles in their best interests.",
     ],
     contactPerson: "",
     website: "cinciao.vn",
@@ -42,9 +42,9 @@ export const workExperience = [
     time: "December 2014 - June 2020",
     location: "Munich, Germany",
     tasks: [
-      "Developed and maintained two Shopify integrated online fashion shops: vmilano.com & iounica.com.",
-      "Designed and produced graphic materials for web UI (photo shoots included.)",
-      "Designed and implemented business operations on all sale channels: B2B shops in Munich, Berlin, Leipzig, Vienna; B2B online shop on vmilano.com; B2C online shops on iounica.com, Amazon.de, Amazon.it, Amazon.fr, Amazon.es, Amazon.co.uk, Amazon.com.",
+      "Designed, developed, and maintained two Shopify integrated online fashion shops: vmilano.com & iounica.com.",
+      "Saved the company at least €450,000 a year by organizing and managing the whole development team in another country.",
+      "Generated over €1,000,000 in sales each year through all sale channels: B2B shops in Munich, Berlin, Leipzig, Vienna; B2B online shop on vmilano.com; B2C online shops on iounica.com, Amazon.de, .it, .fr, .es,.co.uk, and .com.",
     ],
     contactPerson:
       "Contact Person: Luca Lu - Founder & CEO of VMilano Fashion & iounica.com | luca@vmilano.com | +49 176 45678956",
