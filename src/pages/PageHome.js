@@ -45,7 +45,7 @@ const Home = () => {
           controls={false}
           width="100%"
           height="100%"
-        /> */}
+        /> 
 //         <video
 //           className="no-hover"
 //           width="100%"
@@ -55,7 +55,7 @@ const Home = () => {
 //           muted
 //         >
 //           <source src="/IntroVid.mp4" type="video/mp4" />
-//         </video>
+//         </video>*/}
       </section>
       <section className="home-subtitle">
         <p>
