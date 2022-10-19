@@ -54,7 +54,7 @@ const Contact = () => {
             <BiPhoneCall className="info-icon" />
             <span className="info-detail-text">
               <span className="info-detail-bold">Call Me</span>
-              <span className="info-detail-regular">+1 (513) 900 8369</span>
+              <span className="info-detail-regular">+1 (408) 782 4008</span>
             </span>
           </li>
           <li className="info-detail">
