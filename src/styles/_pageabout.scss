@@ -1,0 +1,215 @@
+@import "./config";
+
+.section-intro {
+  // display: flex;
+  // justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  margin: 0;
+  // justify-items: center;
+}
+
+.section-photo {
+  margin: 5rem 3rem;
+  position: relative;
+}
+
+.intro-photo {
+  width: 90%;
+  border-radius: 2rem 2rem 0;
+  position: relative;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.border-photo {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: -3rem;
+  border-radius: 2rem 2rem 0;
+  left: 5rem;
+  border: 1px solid $allmodes-text-first;
+  // z-index: 1;
+  // margin-bottom: 3rem;
+}
+
+.intro-details {
+  margin: 4rem 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.intro-title {
+  font-size: 4rem;
+  line-height: 6rem;
+  font-weight: 500;
+  color: $darkmode-text-first;
+}
+.intro-descriptions {
+  margin: 2rem 0;
+}
+.intro-description {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
+  color: $darkmode-text-second;
+  padding: 1rem 0;
+}
+
+.intro-details a {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.5rem 3rem;
+  transition: $transition-all-ease;
+  text-align: center;
+  width: 50%;
+}
+
+.intro-details a:link,
+.intro-details a:visited {
+  //   border: solid 1px $stonkdown-third;
+  border-radius: 5rem;
+  color: $darkmode-text-first;
+}
+
+.intro-details a:hover,
+.intro-details a:active {
+  background: $button-gradient-45-first;
+}
+
+.section-basicinfo ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  font-size: 2rem;
+  color: $darkmode-text-second;
+  font-weight: 300;
+  width: 50%;
+  margin: auto;
+  li {
+    padding: 1rem 0;
+  }
+}
+.info-detail-bold {
+  font-weight: 400;
+  color: $darkmode-text-first;
+}
+
+.about-recommendations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+.about-recommendation {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  img {
+    border-radius: 50%;
+    width: 15rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: solid 1.5px $darkmode-text-first;
+    transition: $transition-all-ease;
+  }
+  img:hover {
+    filter: brightness(125%);
+  }
+  p {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+    color: $darkmode-text-first;
+    background-color: $darkmode-background-first;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: $transition-all-ease;
+  }
+  p:hover {
+    background-color: $allmodes-text-third;
+  }
+
+  span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    // padding: 0.5rem;
+    color: $darkmode-text-second;
+  }
+  span.recommendation-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $darkmode-text-first;
+  }
+  span.recommendation-contact {
+    color: $darkmode-text-last;
+    transition: $transition-all-ease;
+  }
+  span.recommendation-contact:hover {
+    color: $darkmode-text-first;
+  }
+  span.recommendation-laurel {
+    font-size: 5rem;
+    color: $darkmode-text-third;
+    .recommendation-righttwing {
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .intro-details a {
+    // margin: auto;
+    // width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-intro {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .intro-details {
+    margin: 0 2rem;
+  }
+  .section-photo {
+    // margin: 0
+  }
+  .intro-details a {
+    // margin: auto;
+    width: 100%;
+  }
+
+  .intro-title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .intro-descriptions {
+    margin: 1.5rem 0;
+  }
+  .intro-description {
+    font-size: 1.5rem;
+  }
+
+  .section-basicinfo ul {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    font-size: 1.5rem;
+    color: $darkmode-text-second;
+    width: 90%;
+    margin: auto;
+    li {
+      padding: 1rem 0;
+    }
+  }
+  .about-recommendation {
+    img {
+      width: 12rem;
+    }
+  }
+}
