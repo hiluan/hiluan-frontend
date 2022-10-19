@@ -1,4 +1,4 @@
-import ReactPlayer from "react-player/youtube";
+// import ReactPlayer from "react-player/youtube";
 import { useSelector } from "react-redux";
 
 const Home = () => {
@@ -22,13 +22,13 @@ const Home = () => {
           <h1>Welcome to my world!</h1>
         </section>
       </section>
-      <section className="home-bg-img fadeOut">
-        <img
-          src="https://i.ibb.co/PDdg9CY/hiluan-vienna-project.jpg"
-          alt="vienna project - architectural design "
-        />
-      </section>
-      <section className="home-img">      <section
+//       <section className="home-bg-img fadeOut">
+//         <img
+//           src="https://i.ibb.co/PDdg9CY/hiluan-vienna-project.jpg"
+//           alt="vienna project - architectural design "
+//         />
+//       </section>
+      <section
         className="home-img"
         dangerouslySetInnerHTML={{
           __html: `<video className="no-hover" width="100%"
@@ -54,8 +54,8 @@ const Home = () => {
 //           autoPlay
 //           muted
 //         >
-          <source src="/IntroVid.mp4" type="video/mp4" />
-        </video>
+//           <source src="/IntroVid.mp4" type="video/mp4" />
+//         </video>
       </section>
       <section className="home-subtitle">
         <p>
