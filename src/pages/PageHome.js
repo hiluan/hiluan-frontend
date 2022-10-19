@@ -28,7 +28,15 @@ const Home = () => {
           alt="vienna project - architectural design "
         />
       </section>
-      <section className="home-img">
+      <section className="home-img">      <section
+        className="home-img"
+        dangerouslySetInnerHTML={{
+          __html: `<video className="no-hover" width="100%"
+                  height="100%" autoplay loop muted playsinline>
+                    <source src='/IntroVid.mp4' type="video/mp4" />
+                  </video>`,
+        }}
+      >
         {/* <ReactPlayer
           className="no-hover"
           url={youtubeLink}
@@ -38,14 +46,14 @@ const Home = () => {
           width="100%"
           height="100%"
         /> */}
-        <video
-          className="no-hover"
-          width="100%"
-          height="100%"
-          loop
-          autoPlay
-          muted
-        >
+//         <video
+//           className="no-hover"
+//           width="100%"
+//           height="100%"
+//           loop
+//           autoPlay
+//           muted
+//         >
           <source src="/IntroVid.mp4" type="video/mp4" />
         </video>
       </section>
