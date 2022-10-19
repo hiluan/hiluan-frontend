@@ -22,12 +22,12 @@ const Home = () => {
           <h1>Welcome to my world!</h1>
         </section>
       </section>
-//       <section className="home-bg-img fadeOut">
-//         <img
-//           src="https://i.ibb.co/PDdg9CY/hiluan-vienna-project.jpg"
-//           alt="vienna project - architectural design "
-//         />
-//       </section>
+{/*        <section className="home-bg-img fadeOut">
+         <img
+           src="https://i.ibb.co/PDdg9CY/hiluan-vienna-project.jpg"
+           alt="vienna project - architectural design "
+         />
+       </section>*/}
       <section
         className="home-img"
         dangerouslySetInnerHTML={{
