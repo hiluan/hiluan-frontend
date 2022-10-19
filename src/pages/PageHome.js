@@ -5,9 +5,9 @@ const Home = () => {
   const isMobileMenuActive = useSelector(
     (state) => state.ultilities.isMobileMenuActive
   );
-  const youtubeLink = "https://www.youtube.com/watch?v=PhtYjZ_3fTw";
-  const youtubeEmbed =
-    "https://www.youtube.com/embed/PhtYjZ_3fTw?controls=0&autoplay=1&loop=1&modestbranding=1&showinfo=0&fs=0";
+//   const youtubeLink = "https://www.youtube.com/watch?v=PhtYjZ_3fTw";
+//   const youtubeEmbed =
+//     "https://www.youtube.com/embed/PhtYjZ_3fTw?controls=0&autoplay=1&loop=1&modestbranding=1&showinfo=0&fs=0";
   return (
     <section
       className={`page-home fade ${isMobileMenuActive ? "page-inactive" : ""}`}
@@ -29,7 +29,7 @@ const Home = () => {
         />
       </section>
       <section className="home-img">
-        <ReactPlayer
+        {/* <ReactPlayer
           className="no-hover"
           url={youtubeLink}
           playing={true}
@@ -37,7 +37,17 @@ const Home = () => {
           controls={false}
           width="100%"
           height="100%"
-        />
+        /> */}
+        <video
+          className="no-hover"
+          width="100%"
+          height="100%"
+          loop
+          autoPlay
+          muted
+        >
+          <source src="/IntroVid.mp4" type="video/mp4" />
+        </video>
       </section>
       <section className="home-subtitle">
         <p>
