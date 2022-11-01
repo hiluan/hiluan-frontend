@@ -12,7 +12,7 @@ const infoMyApps = [
   {
     name: "Nur Bier",
     nameDetail: "eCommerce WebApp",
-    tools: ["NextJs", ReactJS, "GraphQL", "Styled", "Framer"],
+    tools: ["NextJs", ReactJS, NodeJS, "GraphQL", "Auth0", "Stripe/Paypal API", "Framer"],
     description:
       "Nur Bier, a full-stack eCommerce WebApp, lets you learn about a brewery startup in Berlin, Germany, and gives you a chance to purchase its new beers.",
     imgUrl:
