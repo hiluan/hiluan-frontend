@@ -91,21 +91,27 @@ body {
 
 /////////////////////////////////////////////////////////////////////////////////// GRADIENT BACKGROUND
 .dark-mode {
-  position: relative;
-  background: linear-gradient(
-    29deg,
-    #1b1e2a,
-    #2a1b25,
-    #1b1e2a,
-    #1b2a1f,
-    #1b1e2a
-  );
-  background-size: 600% 600%;
+//   position: relative;
+//   background: linear-gradient(
+//     29deg,
+//     #1b1e2a,
+//     #2a1b25,
+//     #1b1e2a,
+//     #1b2a1f,
+//     #1b1e2a
+//   );
+//   background-size: 600% 600%;
 
-  -webkit-animation: GradientAnimator 30s ease infinite;
-  -moz-animation: GradientAnimator 30s ease infinite;
-  -o-animation: GradientAnimator 30s ease infinite;
-  animation: GradientAnimator 30s ease infinite;
+//   -webkit-animation: GradientAnimator 30s ease infinite;
+//   -moz-animation: GradientAnimator 30s ease infinite;
+//   -o-animation: GradientAnimator 30s ease infinite;
+//   animation: GradientAnimator 30s ease infinite;
+    background: linear-gradient(45deg, #230000, #003030, #361f00, #003200);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 59s ease infinite;
+    -moz-animation: AnimationName 59s ease infinite;
+    animation: AnimationName 59s ease infinite;
 }
 
 .btn-main {
@@ -118,50 +124,67 @@ body {
   animation: GradientAnimator 5s ease infinite;
 }
 
-@-webkit-keyframes GradientAnimator {
-  0% {
-    background-position: 10% 0%;
-  }
-  50% {
-    background-position: 91% 100%;
-  }
-  100% {
-    background-position: 10% 0%;
-  }
+@-webkit-keyframes AnimationName {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
 }
-@-moz-keyframes GradientAnimator {
-  0% {
-    background-position: 10% 0%;
-  }
-  50% {
-    background-position: 91% 100%;
-  }
-  100% {
-    background-position: 10% 0%;
-  }
+
+@-moz-keyframes AnimationName {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
 }
-@-o-keyframes GradientAnimator {
-  0% {
-    background-position: 10% 0%;
-  }
-  50% {
-    background-position: 91% 100%;
-  }
-  100% {
-    background-position: 10% 0%;
-  }
+
+@keyframes AnimationName {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
 }
-@keyframes GradientAnimator {
-  0% {
-    background-position: 10% 0%;
-  }
-  50% {
-    background-position: 91% 100%;
-  }
-  100% {
-    background-position: 10% 0%;
-  }
-}
+// @-webkit-keyframes GradientAnimator {
+//   0% {
+//     background-position: 10% 0%;
+//   }
+//   50% {
+//     background-position: 91% 100%;
+//   }
+//   100% {
+//     background-position: 10% 0%;
+//   }
+// }
+// @-moz-keyframes GradientAnimator {
+//   0% {
+//     background-position: 10% 0%;
+//   }
+//   50% {
+//     background-position: 91% 100%;
+//   }
+//   100% {
+//     background-position: 10% 0%;
+//   }
+// }
+// @-o-keyframes GradientAnimator {
+//   0% {
+//     background-position: 10% 0%;
+//   }
+//   50% {
+//     background-position: 91% 100%;
+//   }
+//   100% {
+//     background-position: 10% 0%;
+//   }
+// }
+// @keyframes GradientAnimator {
+//   0% {
+//     background-position: 10% 0%;
+//   }
+//   50% {
+//     background-position: 91% 100%;
+//   }
+//   100% {
+//     background-position: 10% 0%;
+//   }
+// }
 
 hr {
   border: 0;
