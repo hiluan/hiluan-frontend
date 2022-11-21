@@ -58,7 +58,7 @@ const infoMyApps = [
     description:
       "Waves is a music player with a simple but elegant UI. With a library of Chillhop Music, you can play it whenever you need a chill moment in life.",
     imgUrl: "https://i.ibb.co/QDMfybX/hiluan-waves-lofi-music.gif",
-    linkToApp: "https://waves-lofimusic.netlify.app",
+    linkToApp: "https://waves-lofi.netlify.app/",
   },
 ];
 
