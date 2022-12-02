@@ -17,7 +17,7 @@ const infoMyApps = [
       "Nur Bier, a full-stack eCommerce WebApp, lets you learn about a brewery startup in Berlin, Germany, and gives you a chance to purchase its new beers.",
     imgUrl:
       "https://i.ibb.co/zsmTsRy/hiluan-nurbier-art-fullstack-ecommerce-web-app.gif",
-    linkToApp: "https://nurbier.art",
+    linkToApp: "https://nurbier.vercel.app/",
   },
   {
     name: "Starlite",
