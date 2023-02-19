@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "./config";
 
 nav {
@@ -310,3 +311,317 @@ li:hover > .nav-list-text {
     }
   }
 }
+=======
+@import "./config";
+
+nav {
+  width: 100%;
+  background-color: $darkmode-background-second;
+  height: 80vh;
+  margin-top: 10vh;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  transition: $transition-all-ease;
+}
+
+nav:hover {
+  box-shadow: $boxshadow;
+}
+nav section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+nav section a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+  transition: $transition-all-ease;
+  text-align: center;
+  display: none;
+}
+
+nav section a:link,
+nav section a:visited {
+  //   border: solid 1px $stonkdown-third;
+  border-radius: 5rem;
+  color: $darkmode-text-first;
+  // background: $button-gradient-45-second;
+}
+
+nav section a:hover,
+nav section a:active {
+  background: $button-gradient-45-first;
+}
+
+nav img {
+  width: 68%;
+  border-radius: 50%;
+  box-shadow: $boxshadow-inset;
+  transition: $transition-all-ease;
+  padding: 0.5rem;
+  border: solid 2px $allmodes-text-first;
+}
+nav img:hover {
+  filter: brightness(125%);
+}
+nav section h1 {
+  color: $darkmode-text-first;
+  transition: $transition-all-ease;
+  text-align: center;
+}
+nav section h3 {
+  color: $darkmode-text-second;
+  transition: $transition-all-ease;
+  text-align: center;
+}
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+}
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+  //   margin: 1rem;
+}
+
+.nav-home-page {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  // min-width: 15rem;
+  h1 {
+    font-size: 3.4rem;
+    font-weight: 500;
+    padding-top: 2rem;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.nav-other-pages {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  // min-width: 5rem;
+  h1 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-top: 1rem;
+  }
+  h3 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.nav-list-icon {
+  cursor: pointer;
+  color: $darkmode-text-first;
+  font-size: 2.5rem;
+  transition: $transition-all-ease;
+}
+
+.nav-list-text {
+  opacity: 0;
+  cursor: pointer;
+  color: $darkmode-text-second;
+  font-weight: 100;
+  font-size: 1.3rem;
+  transition: $transition-all-ease;
+  transform: translateY(-1rem);
+  text-decoration: none;
+}
+
+li:hover > .nav-list-icon {
+  transform: translateY(-0.5rem);
+  color: $allmodes-text-second;
+}
+
+li:hover > .nav-list-text {
+  opacity: 1;
+  transform: translateY(-0.25rem);
+}
+
+.icon-active {
+  color: $allmodes-text-first;
+}
+
+.nav-download-resume {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-home-page {
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+    section a {
+      font-size: 1rem;
+      // padding: 0.5rem;
+    }
+  }
+
+  .nav-other-pages {
+    h1 {
+      font-size: 0.8rem;
+      font-weight: 300;
+      padding-top: 0.5rem;
+    }
+    h3 {
+      font-size: 0.8rem;
+      font-weight: 300;
+    }
+  }
+  .nav-list-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+    // transform: translateX(-300%);
+    // grid-column-start: 1;
+    // grid-column-end: 6;
+  }
+  .mobile-menu-active {
+    display: block;
+    // width: 100%;
+    background-color: $darkmode-background-second;
+    height: 100vh;
+    margin-top: 0;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 21;
+    transition: $transition-all-ease;
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 3rem;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+    }
+    section a {
+      text-decoration: none;
+      font-size: 2rem;
+      margin-top: 3rem;
+      padding: 1rem;
+      transition: $transition-all-ease;
+      text-align: center;
+    }
+
+    // section a:link,
+    // section a:visited {
+    //   //   border: solid 1px $stonkdown-third;
+    //   border-radius: 5rem;
+    //   color: $darkmode-text-first;
+    //   // background: $button-gradient-45-second;
+    // }
+
+    // section a:hover,
+    // section a:active {
+    //   background: $button-gradient-45-first;
+    // }
+
+    img {
+      max-width: 20rem;
+      border-radius: 50%;
+      box-shadow: $boxshadow-inset;
+      transition: $transition-all-ease;
+
+      padding: 1rem;
+      border: solid 2px $allmodes-text-first;
+    }
+    img:hover {
+      filter: brightness(125%);
+    }
+    section h1 {
+      color: $darkmode-text-first;
+      transition: $transition-all-ease;
+      text-align: center;
+    }
+    section h3 {
+      color: $darkmode-text-second;
+      transition: $transition-all-ease;
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+      text-align: center;
+      position: absolute;
+      bottom: 12rem;
+      width: 100%;
+    }
+    ul li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 1rem;
+    }
+    .menu-icon {
+      font-size: 4rem;
+    }
+    span {
+      font-size: 2.5rem;
+      font-weight: 300;
+    }
+    h1 {
+      font-size: 5rem;
+      font-weight: 500;
+      padding-top: 2rem;
+    }
+    h3 {
+      font-size: 3rem;
+      font-weight: 400;
+      padding-bottom: 1rem;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    // li > .nav-list-icon {
+    //   transform: translateY(-0.5rem);
+    //   color: $allmodes-text-second;
+    // }
+
+    li > .nav-list-text {
+      opacity: 1;
+      transform: translateY(-0.25rem);
+      padding-bottom: 1rem;
+      span {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+>>>>>>> 949e034603fd33898c83216d7dcd5ac4a7b2d19c
