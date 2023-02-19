@@ -4,13 +4,11 @@
   grid-column-start: 6;
   grid-column-end: 19;
   background: white;
-  // background-color: $darkmode-background-second;
   height: 80vh;
   margin-top: 10vh;
   border-radius: 1rem;
   position: relative;
   transition: $transition-all-ease;
-  //   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,42 +17,25 @@
 
 .home-text {
   position: absolute;
-  bottom: 8rem;
-  right: 0;
+  top: 70%;
+  left: 40%;
+  // transform: translate(50%);
   text-align: right;
   z-index: 9;
-  .home-header {
-    font-size: 5rem;
-    font-weight: 300;
-    color: $darkmode-text-second;
-    background-color: $darkmode-background-second-08opacity;
-    border-radius: 1rem 0 0 1rem;
-    // padding: 1rem;
-  }
-  h1 {
-    font-weight: 500;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    // text-shadow: 0 0 $darkmode-background-first;
-  }
-  h1 span {
-    // font-size: 8rem;
 
-    color: $darkmode-text-first;
-    // text-shadow: 0 0 4px $darkmode-background-first;
-  }
-  h3 {
+  .home-header {
+    padding-left: 1rem;
     font-size: 3rem;
-    font-weight: 400;
-    color: $darkmode-background-first;
+    font-weight: 300;
+    // background-color: $darkmode-background-second-08opacity;
+    color: $lightmode-text;
+    background-color: white;
+    font-family: "Courier Prime", monospace;
   }
 }
 
 .home-bg-img {
   position: absolute;
-  // width: calc(100vh * 16 / 9);
-  // height: 110%;
-  // top: 0;
   background-size: contain;
   -webkit-animation-duration: 7s;
   animation-duration: 7s;
@@ -62,12 +43,12 @@
   animation-fill-mode: both;
   z-index: 2;
 }
+
 .home-subtitle {
   position: absolute;
   bottom: 2vh;
   font-size: 1.75rem;
-  font-weight: 300;
-  // margin: 0;
+  font-weight: 100;
   left: 30%;
   color: $darkmode-text-first;
   z-index: 9;
@@ -128,11 +109,9 @@
     grid-column-end: 21;
     height: 100vh;
     margin-top: 0;
-    // background: white;
     border-radius: 0;
     .home-img {
       width: calc(100vh * 16 / 9);
-      // height: 100vh;
       transform: translateX(-25%);
     }
     .home-bg-img {
@@ -141,7 +120,6 @@
       background-color: $darkmode-text-first;
       top: 0;
       bottom: 0;
-      // margin: auto;
     }
     .home-text {
       bottom: 30vh;

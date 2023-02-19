@@ -23,11 +23,15 @@
 
   h2 {
     color: $darkmode-text-first;
-    font-size: 4rem;
+    font-family: "Courier Prime", monospace;
+    font-size: 3rem;
     font-weight: 400;
     span {
+      font-family: "Montserrat";
+      font-weight: 300;
+      font-size: 2.8rem;
       background: transparent;
-      color: $darkmode-text-third;
+      color: $darkmode-text-second;
     }
   }
   h4 {

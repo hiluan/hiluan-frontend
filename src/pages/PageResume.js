@@ -123,7 +123,6 @@ const Resume = () => {
               <ul className="resume-skills">
                 {techLanguages.map((skill) => (
                   <TechSkill skill={skill} key={skill} />
-                  // <span>{skill}</span>
                 ))}
               </ul>
             </section>
@@ -132,7 +131,6 @@ const Resume = () => {
               <ul className="resume-skills">
                 {techToolsFrameworks.map((skill) => (
                   <TechSkill skill={skill} key={skill} />
-                  // <span>{skill}</span>
                 ))}
               </ul>
             </section>
@@ -154,10 +152,6 @@ const Resume = () => {
             <div></div>
           </section>
           <section className="resume-body">
-            {/* <section className="exp-title">
-              <h3 className="h3-bold">HCMC University of Architecture</h3>
-              <h3>Bachelor Degree</h3>
-            </section> */}
             <section className="resume-school">
               <h3 className="h3-bold">Master Degree</h3>
               <h3>
@@ -168,23 +162,7 @@ const Resume = () => {
             </section>
           </section>
         </section>
-        {/* <section className="resume-section">
-          <section className="resume-title">
-            <h2>organizations</h2>
-            <div></div>
-          </section>
-          <section className="resume-body">
-            <h3>
-              <a href="https://www.facebook.com/groups/munich.international.friends/">
-                Munich International Friends
-              </a>
-            </h3>
-            <p className="">
-              Organizing meetups, games, indoor and outdoor activities for
-              international expats and friends in Munich, Germany.
-            </p>
-          </section>
-        </section> */}
+
         <section className="resume-section">
           <section className="resume-title">
             <h2>languages</h2>

@@ -3,8 +3,8 @@ const SectionBasicInfo = () => {
     <section className="section-basicinfo">
       <ul className="info-detail-group">
         <li className="info-detail">
-          <span className="info-detail-bold">Degree</span>
-          <span className="info-detail-regular">: Master - MArch</span>
+          <span className="info-detail-bold">Education</span>
+          <span className="info-detail-regular">: Master's Degree</span>
         </li>
         <li className="info-detail">
           <span className="info-detail-bold">Email</span>
@@ -16,7 +16,7 @@ const SectionBasicInfo = () => {
         </li>
         <li className="info-detail">
           <span className="info-detail-bold">Phone</span>
-          <span className="info-detail-regular">: +1 (513) 900 8369</span>
+          <span className="info-detail-regular">: +1 (408) 782 4008</span>
         </li>
       </ul>
     </section>

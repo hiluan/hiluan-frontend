@@ -10,49 +10,88 @@ const langCSS = "CSS";
 const Shopify = "Shopify";
 const infoMyApps = [
   {
+    name: "Skizzenhaus",
+    nameDetail: "AI Image Generator",
+    tools: [
+      ReactJS,
+      "DALL-E",
+      "Tailwind CSS",
+      NodeJS,
+      MongoDB,
+      ExpressJS,
+      "Mongoose",
+    ],
+    description:
+      "Skizzenhaus, an AI image generator app, creates breathtaking visuals that showcase your creativity and produce stunning images in an instant.",
+    imgUrl:
+      "https://github.com/hiluan/hiluan/raw/main/images/hiluan-skizzenhaus-ai-image-generator.gif",
+    linkToApp: "https://skizzen.haus",
+  },
+  {
+    name: "Datanexus",
+    nameDetail: "Data Management App",
+    tools: [ReactJS, Redux, "Material UI", "Nivo", NodeJS, MongoDB, ExpressJS],
+    description:
+      "DataNexus, a data visualization and management app, simplifies data analysis, enabling informed decision-making for your business or organization.",
+    imgUrl:
+      "https://github.com/hiluan/hiluan/raw/main/images/hiluan-datanexus-admin-dashboard-v4h.gif",
+    linkToApp: "https://datanexus.vercel.app",
+  },
+  {
+    name: "Nur Bier",
+    nameDetail: "eCommerce WebApp",
+    tools: [
+      "NextJS",
+      "Strapi",
+      "GraphQL",
+      "Stripe API",
+      "Styled Components",
+      "Framer Motion",
+    ],
+    description:
+      "Nur Bier, a full-stack eCommerce WebApp, lets you learn about a brewery startup in Berlin, Germany, and gives you a chance to purchase its new beers.",
+    imgUrl:
+      "https://i.ibb.co/zsmTsRy/hiluan-nurbier-art-fullstack-ecommerce-web-app.gif",
+    linkToApp: "https://nurbier.vercel.app",
+  },
+  {
     name: "Starlite",
     nameDetail: "Online Trading Platform",
     tools: [ReactJS, Redux, NodeJS, ExpressJS, MongoDB, Sass],
     description:
       "Startlite, a WebApp with real-time market data, lets you follow your favorite stocks, create your own portfolio and test your trades and strategies.",
-    // imgUrl:
-    //   "https://i.ibb.co/LhcZ7KP/hiluan-startlite-online-broker-trading-platform.jpg",
     imgUrl:
       "https://i.ibb.co/z8Hj28z/hiluan-startlite-online-broker-trading-platform.gif",
     linkToApp: "https://starlite.netlify.app",
   },
   {
-    name: "Cinciao.vn",
+    name: "Cinciao",
     nameDetail: "Platform As A Service",
     tools: [JavaScript, langHTML, langCSS, Shopify],
     description:
       "Cinciao allows Vietnamese celebrities to send personalized video messages to their fans and to FaceTime directly with them, anytime and anywhere.",
-    // imgUrl: "https://i.ibb.co/cXfx1wW/hiluan-cinciao-vn.jpg",
-    // imgUrl: "https://i.ibb.co/t2jvfNf/hiluan-cinciao-com-vn.jpg",
     imgUrl: "https://i.ibb.co/0MXsgZN/hiluan-cinciao-com.gif",
-
     linkToApp: "https://cinciao.com",
   },
-  {
-    name: "Waves",
-    nameDetail: "Lofi Chillhop Music Player",
-    tools: [ReactJS, Sass],
-    description:
-      "Waves is a music player with a simple but elegant UI. With a library of Chillhop Music, you can play it whenever you need a chill moment in life.",
-    // imgUrl: "https://i.ibb.co/DKJkPXS/hiluan-waves-lofi-music.jpg",
-    imgUrl: "https://i.ibb.co/QDMfybX/hiluan-waves-lofi-music.gif",
-    linkToApp: "https://waves-lofimusic.netlify.app",
-  },
+
   {
     name: "iounica.com",
     nameDetail: "Online Fashion Shop",
     tools: [JavaScript, langHTML, langCSS, Shopify],
     description:
       "iounica, a B2C online shop integrated with Shopify, gives its German and European customers a chance to purchase the best Italian styles to date.",
-    // imgUrl: "https://i.ibb.co/tDZ8GKc/hiluan-iounica-com-de-vmilano.jpg",
     imgUrl: "https://i.ibb.co/n1D1XmV/hiluan-iounica-com.gif",
-
     linkToApp: "https://iounica.com",
+  },
+
+  {
+    name: "Waves",
+    nameDetail: "Lofi Chillhop Music Player",
+    tools: [ReactJS, Sass],
+    description:
+      "Waves is a music player with a simple but elegant UI. With a library of Chillhop Music, you can play it whenever you need a chill moment in life.",
+    imgUrl: "https://i.ibb.co/QDMfybX/hiluan-waves-lofi-music.gif",
+    linkToApp: "https://waves-lofimusic.netlify.app",
   },
 ];
 

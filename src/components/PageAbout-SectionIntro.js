@@ -37,9 +37,6 @@ const SectionIntro = () => {
             Get in touch to find the next thing together!
           </p>
         </section>
-        {/* <button className="intro-btn" type="button"> */}
-        {/* Get in Touch */}
-        {/* </button> */}
         <Link
           className="btn btn-main"
           onClick={() => handlerSwitchOtherPages(dispatch, "contact")}

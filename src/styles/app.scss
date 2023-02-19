@@ -16,7 +16,6 @@
   margin: 0;
   padding: 0;
   // box-sizing: 0;
-  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
@@ -25,6 +24,7 @@ html {
 } /* font-size: 62.5% now means that 1.0 rem = 10px */
 
 body {
+  font-family: "Roboto", sans-serif;
 }
 
 .App {

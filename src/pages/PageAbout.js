@@ -2,10 +2,8 @@ import SectionIntro from "../components/PageAbout-SectionIntro";
 import SectionBasicInfo from "../components/PageAbout-SectionBasicInfo";
 import { handlerSwitchOtherPages } from "../components/_handlerSwitchPages";
 import { useDispatch, useSelector } from "react-redux";
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
 import infoRecommendations from "../components/_infoRecommendations";
-import { GiLaurelCrown, GiCurlyWing } from "react-icons/gi";
+import { GiLaurelCrown } from "react-icons/gi";
 
 const Recommendation = (props) => {
   return (
@@ -19,10 +17,7 @@ const Recommendation = (props) => {
       <span>{props.rec.position}</span>
       <span className="recommendation-contact">{props.rec.contact}</span>
       <span className="recommendation-laurel">
-        {/* <GiCurlyWing className="recommendation-leftwing" /> */}
         <GiLaurelCrown />
-        {/* {"    "}
-        <GiCurlyWing className="recommendation-righttwing" /> */}
       </span>
     </section>
   );

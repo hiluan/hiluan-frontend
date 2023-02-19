@@ -17,14 +17,11 @@ import {
 
 const Nav = () => {
   const dispatch = useDispatch();
-  const resume = "./";
-
   const isHomePage = useSelector((state) => state.ultilities.isHomePage);
   const iconActive = useSelector((state) => state.ultilities.iconActive);
   const isMobileMenuActive = useSelector(
     (state) => state.ultilities.isMobileMenuActive
   );
-
   return (
     <nav
       className={`fade ${isMobileMenuActive ? "mobile-menu-active" : ""} ${
@@ -34,13 +31,13 @@ const Nav = () => {
       <section className="nav-header">
         <img id="nav-img" className="nav-img" src={myAvatar} alt="" />
         <h1 className="nav-name">Luan Pham</h1>
-        <h3>- MArch -</h3>
+        <h3>Software Engineer</h3>
         <a
           target="_blank"
           className={`btn btn-main ${isHomePage ? "nav-download-resume" : ""} ${
             isMobileMenuActive ? "nav-download-resume" : ""
           }`}
-          href="https://drive.google.com/file/d/1GfgDGXrjPplH0Lf2_VnfjIUEolorHwqn/view?usp=sharing"
+          href="https://drive.google.com/file/d/1yKVvv50WsOahuBF-ERgIvN6o06EO3jYn/view?usp=share_link"
         >
           Download My Resume
         </a>
