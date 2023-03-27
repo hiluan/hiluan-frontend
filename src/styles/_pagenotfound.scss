@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import "./config";
 .page-not-found {
   background: transparent;
@@ -18,24 +17,3 @@
     }
   }
 }
-=======
-@import "./config";
-.page-not-found {
-  background: transparent;
-  // $darkmode-background-second;
-  h1 {
-    color: $darkmode-background-second;
-    font-size: 22rem;
-    transition: $transition-all-ease;
-  }
-  transition: $transition-all-ease;
-}
-
-@media screen and (max-width: 1200px) {
-  .page-not-found {
-    h1 {
-      font-size: 16rem;
-    }
-  }
-}
->>>>>>> 949e034603fd33898c83216d7dcd5ac4a7b2d19c
