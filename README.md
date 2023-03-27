@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <img src="https://i.ibb.co/zrvXDP0/hiluan-dev-github-banner.jpg" width="100%" />
 
 <p align="center">
@@ -29,12 +28,84 @@
   </a>
 </p>
 
-Currently Software Engineer at 100Devs and Operating Officer at Cinciao. I am
+Currently Software Engineer at 100Devs and Operational Manager at Cinciao. I am
 motivated by the power of technology as a tool for positive change. See [my
 website](https://hiluan.dev) for more information!
 
 <h1 align="center">Projects</h1>
 <table bordercolor="#66b2b2">
+  <!-- NURBIER -->
+  <!-- SKIZZENHAUS -->
+  <tr>
+    <!-- SKIZZENHAUS -->
+    <td width="50%" valign="top">
+      <h3 align="center">Skizzenhaus: AI Image Generator</h3>
+      <br />
+        <a target="_blank" href="https://skizzenhaus.com">
+          <img
+            src="images/hiluan-skizzenhaus-ai-image-generator.gif"
+            width="100%"
+            alt="skizzenhaus.com: AI Image Generator"
+          />
+        </a>
+      <br />
+      <p align="center">
+        <a href="https://github.com/hiluan/skizzenhaus-AI-image-generator-frontend" target="_blank">
+          <img
+            src="https://img.shields.io/static/v1?label=|&message=REPO&color=23555f&style=plastic&logo=github&logo-color=white"
+          />
+        </a>
+        <a href="https://skizzenhaus.com" target="_blank">
+          <img
+            src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"
+          />
+        </a>
+      </p>
+      <p>
+        <strong
+          >React.js, Redux, Tailwind CSS, DALL-E, Stable Diffusion, Javascript, Node.js, & Express.js</strong
+        >
+        - AI image generator app, creates breathtaking visuals that showcase your creativity and produce stunning images in an instant.
+      </p>
+    </td>
+    <!-- NURBIER -->
+    <td width="50%" valign="top">
+      <h3 align="center">Nur Bier: eCommerce WebApp</h3>
+      <br />
+        <a target="_blank" href="https://nurbier.vercel.app">
+          <img
+            src="images/hiluan-nurbier-art-fullstack-ecommerce-web-app-800.gif"
+            width="100%"
+            alt="NurBier.art: Nur Bier - eCommerce WebApp"
+          />
+        </a>
+      <br />
+      <p align="center">
+        <a
+          href="https://github.com/hiluan/nurbier-ecommerce-webapp-frontend"
+          target="_blank"
+        >
+          <img
+            src="https://img.shields.io/static/v1?label=|&message=REPO&color=23555f&style=plastic&logo=github&logo-color=white"
+          />
+        </a>
+        <a href="https://nurbier.vercel.app" target="_blank">
+          <img
+            src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"
+          />
+        </a>
+      </p>
+      <p>
+        <strong>
+          "NextJs", ReactJS, Strapi, GraphQL, Cloudinary, Auth0, Stripe API,
+          Paypal API, Styled Components, Framer Motion
+        </strong>
+          - Nur Bier, a full-stack eCommerce WebApp, lets you learn about a brewery
+          startup in Berlin, Germany, and gives you a chance to purchase its new
+          beers.
+      </p>
+    </td>
+  </tr>
   <!-- HILUAN -->
   <!-- STARLITE -->
   <tr>
@@ -42,7 +113,6 @@ website](https://hiluan.dev) for more information!
     <td width="50%" valign="top">
       <h3 align="center">hiluan.dev: Luan's Portfolio</h3>
       <br />
-      <p align="center">
         <a target="_blank" href="https://hiluan.dev">
           <img
             src="images/hiluan-homepage-800.gif"
@@ -50,7 +120,6 @@ website](https://hiluan.dev) for more information!
             alt="hiluan.dev: Luan's Portfolio"
           />
         </a>
-      </p>
       <br />
       <p align="center">
         <a href="https://github.com/hiluan/hiluan-frontend" target="_blank">
@@ -172,30 +241,30 @@ website](https://hiluan.dev) for more information!
     
   </tr>
   <!-- MAIN APP -->
-  <!-- NURBIER -->
+  <!-- DATANEXUS -->
   <tr>
-    <h3 align="center">Nur Bier: eCommerce WebApp</h3>
+    <h3 align="center">Datanexus: Data Management App</h3>
     <br />
     <p align="center">
-      <a target="_blank" href="https://nurbier.art">
+      <a target="_blank" href="https://datanexus.vercel.app">
         <img
-          src="https://i.ibb.co/5vnzSBQ/hiluan-nurbier-art-fullstack-ecommerce-web-app-800.gif"
+          src="https://raw.githubusercontent.com/hiluan/hiluan/main/images/hiluan-datanexus-admin-dashboard-v4h.gif"
           width="100%"
-          alt="NurBier.art: Nur Bier - eCommerce WebApp"
+          alt="datanexus.vercel.app: Datanexus - Data Management App"
         />
       </a>
     </p>
     <br />
     <p align="center">
       <a
-        href="https://github.com/hiluan/ecommerce-fullstack-NUR-BIER-frontend"
+        href="https://github.com/hiluan/datanexus-admin-dashboard-frontend"
         target="_blank"
       >
         <img
           src="https://img.shields.io/static/v1?label=|&message=REPO&color=23555f&style=plastic&logo=github&logo-color=white"
         />
       </a>
-      <a href="https://nurbier.art" target="_blank">
+      <a href="https://datanexus.vercel.app" target="_blank">
         <img
           src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"
         />
@@ -203,12 +272,9 @@ website](https://hiluan.dev) for more information!
     </p>
     <p>
       <strong>
-        "NextJs", ReactJS, Strapi, GraphQL, Cloudinary, Auth0, Stripe API,
-        Paypal API, Styled Components, Framer Motion
+        Reactjs, Redux, Nodejs Express, Mongoose, Nivo, MateialUI,
       </strong>
-      - Nur Bier, a full-stack eCommerce WebApp, lets you learn about a brewery
-      startup in Berlin, Germany, and gives you a chance to purchase its new
-      beers.
+     DataNexus, a data visualization and management app, simplifies data analysis, enabling informed decision-making for your business or organization.
     </p>
   </tr>
 </table>
@@ -413,53 +479,3 @@ website](https://hiluan.dev) for more information!
     />
   </a>
 </p>
-=======
-# hiluan.dev: Luan's Portfolio
-Portfolio Site including links to my projects and ways to get in contact with me.
-
-
-**Link to project:** https://hiluan.dev/
-
-![alt tag](https://github.com/hiluan/hiluan/blob/main/images/hiluan-homepage-800.gif)
-
-## How It's Made:
-
-**Tech used:** React.JS, Node.JS, Express.Js, MongoDB, Redux, HTML, CSS, JavaScript
-
-1. Navigation Bar:
-
-Navigate to 6 pages: Home, My Apps, My Design, About Me, My Resume, and Contact.
-There are 2 versions:
-- Home Page has a wider Nav. Bar with a link to download my resume.
-- Other Pages have a small Nav. Bar to navigate between pages.
-
-
-2. FrontPage:
-- Download a PDF version of my resume from here.
-- The video is from Youtube. It is auto-played whenever the page loads.
-
-
-3. Other Pages:
-Each page has its own info about me, my skills, and my experience.
-
-
-## Optimizations
-Mouse scrolling should be used to move between pages. 
-This would create a smoother experience and visitors don't have to find the buttons to click.
-Dark mode / Light mode still needs to be done.
-
-## Lessons Learned:
-
-Experiment with using Grid. It is fast and easy to organize the page.
-However, with Grid, the transition of the Navigation Bar from wide (home page) to narrow (other pages) still cannot be optimized for smoother transformation.   
-  
-
-## Examples:
-Take a look at these couple examples that I have in my own portfolio:
-
-**Starlite - Online Trading Platform** https://github.com/hiluan/starlite-frontend
-
-**Waves - Lofi Music Player** https://github.com/hiluan/waves
-
-
->>>>>>> 949e034603fd33898c83216d7dcd5ac4a7b2d19c
