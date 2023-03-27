@@ -14,7 +14,7 @@ const Tailwind = "Tailwind CSS";
 const infoMyApps = [
   {
     name: "FilmSpot",
-    nameDetail: "Film Spotter",
+    nameDetail: "Movies Spotter App",
     tools: [NextJS, "Chakra UI"],
     description:
       "FilmSpot, a visually stunning movie app that transforms how you manage and watch movie recommendations. Search, bookmark and review movies.",
