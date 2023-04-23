@@ -13,6 +13,16 @@ const Tailwind = "Tailwind CSS";
 
 const infoMyApps = [
   {
+    name: "Penvie",
+    nameDetail: "AI Chat Assistant",
+    tools: [NextJS, "Google Cloud Functions", "Firebase Auth", "Firestore DB"],
+    description:
+      "Penvie, an ultimate AI assistant chat app that enables natural language conversations, make requests, and receive personalized responses.",
+    imgUrl: "https://i.ibb.co/fp59vHy/hiluan-penvie-ai-assistant-chat-bot.gif",
+    linkToApp: "https://penvie.vercel.app",
+    linkToRepo: "",
+  },
+  {
     name: "FilmSpot",
     nameDetail: "Movies Spotter App",
     tools: [NextJS, "Chakra UI"],
@@ -37,7 +47,7 @@ const infoMyApps = [
     description:
       "Skizzenhaus, an AI image generator app, creates breathtaking visuals that showcase your creativity and produce stunning images in an instant.",
     imgUrl:
-      "https://github.com/hiluan/hiluan/raw/main/images/hiluan-skizzenhaus-ai-image-generator.gif",
+      "https://i.ibb.co/RHHv7M3/hiluan-skizzenhaus-ai-image-generator-ai.gif",
     linkToApp: "https://skizzen.haus",
     linkToRepo:
       "https://github.com/hiluan/skizzenhaus-AI-image-generator-frontend",
