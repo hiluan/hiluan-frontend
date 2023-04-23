@@ -15,7 +15,13 @@ const infoMyApps = [
   {
     name: "Penvie",
     nameDetail: "AI Chat Assistant",
-    tools: [NextJS, "Google Cloud Functions", "Firebase Auth", "Firestore DB"],
+    tools: [
+      NextJS,
+      "Google Cloud Functions",
+      "Firebase Auth",
+      "Firestore DB",
+      Tailwind,
+    ],
     description:
       "Penvie, an ultimate AI assistant chat app that enables natural language conversations, make requests, and receive personalized responses.",
     imgUrl: "https://i.ibb.co/fp59vHy/hiluan-penvie-ai-assistant-chat-bot.gif",
