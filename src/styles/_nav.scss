@@ -49,6 +49,7 @@ nav section a:active {
 }
 
 nav img {
+  display: block;
   width: 68%;
   border-radius: 50%;
   box-shadow: $boxshadow-inset;
@@ -240,6 +241,7 @@ li:hover > .nav-list-text {
     // }
 
     img {
+      display: none;
       max-width: 25rem;
       border-radius: 50%;
       box-shadow: $boxshadow-inset;

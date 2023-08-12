@@ -1,4 +1,5 @@
-import { IoIosCloseCircleOutline, IoIosMenu } from "react-icons/io";
+import { VscClose } from "react-icons/vsc";
+import { FcMenu } from "react-icons/fc";
 import { useDispatch, useSelector } from "react-redux";
 import { isMenuActiveAction } from "../store/isMenuActiveAction";
 
@@ -13,9 +14,9 @@ const MenuButton = () => {
   return (
     <a onClick={handlerToggleMenu} id="menu-mobile">
       {mobileMenuStatus ? (
-        <IoIosCloseCircleOutline id="menu-button" />
+        <VscClose id="menu-button" />
       ) : (
-        <IoIosMenu id="menu-button" />
+        <FcMenu id="menu-button" style={{ color: "black" }} />
       )}
       {/* <span>open</span>
       <span>menu</span> */}
