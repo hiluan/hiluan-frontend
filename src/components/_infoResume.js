@@ -2,52 +2,52 @@ export const workExperience = [
   {
     // position: "Chief Operating Officer",
     position: "Software Engineer",
-
-    company: "100Devs",
-    companyDescription: "100Devs is a software agency based in Los Angeles.",
-
-    time: "October 2021 - Present",
-    location: "Los Angeles, CA, USA",
-    tasks: [
-      "Collaborated with a talented team of developers to build and deploy 10+ modern and responsive React-based web apps for clients worldwide, ensuring high-quality performance and user experience.",
-      "Implemented 100+ features, fixed 1000+ bugs, and contributed to the documentation, specifications, code review, and technical review processes, helping to improve team efficiency and project outcomes.",
-      "Successfully applied Agile methodologies, including SCRUM, to manage project timelines, facilitate communication, and deliver high-quality products on time and within budget.",
-    ],
-    contactPerson: "",
-    website: "",
-  },
-  {
-    position: "Software Engineer and Solutions Architect",
-    company: "Cinciao Vietnam",
+    company: "Trailblazing Love",
     companyDescription:
-      "Cinciao is a platform as a service startup. Cinciao.vn allows Vietnamese celebrities to send personalized video messages to their fans in Vietnam.",
-    time: "July 2020 - Present",
-    location: "Hochiminh City, Vietnam",
+      "Trailblazing Love stands as a visionary online service and retailer, masterfully curating Adventure Date Night Boxes that seamlessly blend the enchantment of the outdoors with intimate connections.",
+
+    time: "December 2022 - Present",
+    location: "Burlington, NC, USA",
     tasks: [
-      "Designed and developed a Fullstack Web App MVP integrated with Shopify using JavaScript, HTML5, and CSS3, resulting in a remarkable 38% increase in yearly users due to the enhanced mobile-first and responsive web UX and UI.",
-      "Successfully onboarded 1000+ celebrities and customized their in-app profiles to meet their unique needs and preferences, helping to drive user engagement and satisfaction.",
-      "Demonstrated exceptional leadership and project management skills, leading the successful development of the web app and contributing to the app's growth and success",
+      "Optimized front-end code and implemented responsive design strategies, resulting in over 30% reduction in page load times and a 26% increase in mobile user engagement.",
+      "Collaborated with cross-functional teams to design and implement intuitive user interfaces, leading to a remarkable 33% increase in overall conversion rate and generating an additional $220,000 in annual sales.",
+      "Conducted rigorous A/B tests on key website elements, such as call-to-action buttons and checkout flows, leading to data-backed improvements that boosted conversion rates by an average of 19% across multiple product categories.",
     ],
     contactPerson: "",
-    website: "cinciao.vn",
+    website: "https://trailblazinglove.com/",
   },
   {
-    // position: "Chief Operating Officer",
-    position: "Developer and Solutions Architect",
-
+    position: "Operations Manager and Developer",
+    company: "Cinciao",
+    companyDescription:
+      "Cinciao is a platform as a service startup. Cinciao allows Vietnamese celebrities to send personalized video messages to their fans in Vietnam.",
+    time: "March 2020 - November 2022",
+    location: "Cincinnati, OH, USA",
+    tasks: [
+      "Led the creation of an innovative MVP alongside a skilled team of software developers, resulting in an impressive 38% upswing in website traffic owing to enhanced user experience and a seamless interface.",
+      "Onboarded and managed over 1,000 high-profile celebrities, solidifying the platform as the go-to destination for personalized experiences, attracting 20,000 users.",
+      "Achieved a 27% YoY earnings increase by analyzing market trends, implementing data-driven strategies, and optimizing processes, establishing the platform as a formidable player in the digital entertainment industry.",
+    ],
+    contactPerson: "",
+    website: "https://cinciao.com",
+  },
+  {
+    position: "Operations Manager",
     company: "VMilano Fashion",
     companyDescription:
       "VMilano is a B2B fashion company in Munich. VMilano gives the local shops a chance to provide their customers the best Italian styles to date.",
-    time: "December 2014 - June 2020",
+    time: "December 2014 - Feb 2020",
     location: "Munich, Germany",
     tasks: [
-      "Designed and developed two Shopify-integrated online fashion stores: vmilano.com & iounica.com, achieving over €1,000,000 in sales each year across multiple B2B shops, online stores, and Amazon stores.",
-      "Built and managed high-performing teams responsible for sales, logistics, design, and development, demonstrating excellent leadership and organizational skills.",
-      "Significantly contributed to cost savings by effectively managing and organizing the development team in a separate country, reducing expenses by €450,000 annually and optimizing the team's performance.",
+      "Designed and developed two successful online fashion stores, vmilano.com & iounica.com, generating over €1.2 million in annual sales across multiple B2B shops, online stores, and Amazon channels.",
+      "Built and managed high-performing teams responsible for sales, logistics, design, and development, showcasing excellent leadership and organizational skills.",
+      "Achieved cost savings of €450,000 annually by effectively managing and organizing a development team in a separate country, optimizing performance and reducing expenses.",
+      "Implemented efficient inventory management strategies, minimizing stockouts, improving order fulfillment rates, and enhancing overall customer satisfaction.",
+      "Streamlined order fulfillment processes through automation solutions, reducing order processing time by 50% and improving operational efficiency.",
     ],
     contactPerson:
       "Contact Person: Luca Lu - Founder & CEO of VMilano Fashion & iounica.com | luca@vmilano.com | +49 176 45678956",
-    website: "iounica.com",
+    website: "https://vmilano.com",
   },
   {
     position: "Designer",
