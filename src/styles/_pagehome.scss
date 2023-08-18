@@ -45,6 +45,7 @@
 }
 
 .home-subtitle {
+  display: block;
   position: absolute;
   bottom: 2vh;
   font-size: 1.75rem;
@@ -59,6 +60,7 @@
     left: -20%;
   }
 }
+
 @-webkit-keyframes fadeOut {
   0% {
     opacity: 1;
@@ -123,6 +125,8 @@
     }
     .home-text {
       bottom: 30vh;
+      left: 10%;
+
       h1 {
         font-size: 3rem;
       }
@@ -131,8 +135,12 @@
       }
     }
     .home-subtitle {
-      bottom: 10vh;
-      font-size: 1.5rem;
+      display: none;
+    }
+
+    .typewrite {
+      font-size: 1.8rem;
+      width: 100%;
     }
   }
 }
