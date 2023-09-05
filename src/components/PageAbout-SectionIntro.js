@@ -17,11 +17,11 @@ const SectionIntro = () => {
         </h1>
         <section className="intro-descriptions">
           <p className="intro-description">I want to change the world!</p>
-          <p className="intro-description">
+          {/* <p className="intro-description">
             Currently working for my startup: Cinciao.com, which allows
             celebrities to send personalized video messages to fans in Vietnam.
             Before that, I worked in the architecture and fashion industry.
-          </p>
+          </p> */}
           <p className="intro-description">
             Technology always fascinates me because one great and well-executed
             idea could change millions of lives, unlike fashion or architecture
