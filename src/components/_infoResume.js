@@ -2,19 +2,19 @@ export const workExperience = [
   {
     // position: "Chief Operating Officer",
     position: "Software Engineer",
-    company: "Trailblazing Love",
+    company: "CodeSync",
     companyDescription:
-      "Trailblazing Love stands as a visionary online service and retailer, masterfully curating Adventure Date Night Boxes that seamlessly blend the enchantment of the outdoors with intimate connections.",
+      "CodeSync is a developer platform that streams and saves code changes in real time. Think “GitHub with streaming.",
 
     time: "December 2022 - Present",
-    location: "Burlington, NC, USA",
+    location: "San Jose, CA, USA",
     tasks: [
-      "Optimized front-end code and implemented responsive design strategies, resulting in over 30% reduction in page load times and a 26% increase in mobile user engagement.",
-      "Collaborated with cross-functional teams to design and implement intuitive user interfaces, leading to a remarkable 33% increase in overall conversion rate and generating an additional $220,000 in annual sales.",
-      "Conducted rigorous A/B tests on key website elements, such as call-to-action buttons and checkout flows, leading to data-backed improvements that boosted conversion rates by an average of 19% across multiple product categories.",
+      "Developed user-friendly web interfaces using Next.JS and TypeScript, resulting in a 25% reduction in UI-related issues and a 15% improvement in page load speed.",
+      "Collaborated closely with designers and back-end developers to ensure seamless integration, actively participating in code reviews to enhance team productivity and code quality.",
+      "Implemented front-end optimizations, including lazy loading and caching, leading to a 30% faster page load and raising the Google PageSpeed score to 90. This significantly improved user experience and SEO performance.",
     ],
     contactPerson: "",
-    website: "https://trailblazinglove.com/",
+    website: "https://codesync.com/",
   },
   {
     position: "Operations Manager and Developer",
