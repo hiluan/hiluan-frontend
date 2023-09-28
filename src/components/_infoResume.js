@@ -9,15 +9,15 @@ export const workExperience = [
     time: "December 2022 - Present",
     location: "San Jose, CA, USA",
     tasks: [
-      "Developed user-friendly web interfaces using Next.JS and TypeScript, resulting in a 25% reduction in UI-related issues and a 15% improvement in page load speed.",
-      "Collaborated closely with designers and back-end developers to ensure seamless integration, actively participating in code reviews to enhance team productivity and code quality.",
-      "Implemented front-end optimizations, including lazy loading and caching, leading to a 30% faster page load and raising the Google PageSpeed score to 90. This significantly improved user experience and SEO performance.",
+      "Developed user-friendly web interfaces using Next.JS and TypeScript, resulting in a 25% reduction in UI-related issues, while also successfully improving load time by 30% for a better user experience.",
+      "Collaborated with cross-functional teams, including designers and software engineers, to ensure seamless integration and maintained code quality through regular code reviews.",
+      "Effectively communicated complex technical concepts to both technical and non-technical stakeholders, facilitating informed decision-making within the team.",
     ],
     contactPerson: "",
     website: "https://codesync.com/",
   },
   {
-    position: "Operations Manager and Developer",
+    position: "Software Development & Operations Coordinator",
     company: "Cinciao",
     companyDescription:
       "Cinciao is a platform as a service startup. Cinciao allows Vietnamese celebrities to send personalized video messages to their fans in Vietnam.",
@@ -32,7 +32,7 @@ export const workExperience = [
     website: "https://cinciao.com",
   },
   {
-    position: "Operations Manager",
+    position: "Operations Planner",
     company: "VMilano Fashion",
     companyDescription:
       "VMilano is a B2B fashion company in Munich. VMilano gives the local shops a chance to provide their customers the best Italian styles to date.",

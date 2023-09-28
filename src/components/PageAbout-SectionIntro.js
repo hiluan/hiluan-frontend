@@ -23,18 +23,20 @@ const SectionIntro = () => {
             Before that, I worked in the architecture and fashion industry.
           </p> */}
           <p className="intro-description">
-            Technology always fascinates me because one great and well-executed
-            idea could change millions of lives, unlike fashion or architecture
-            where one idea could help only dozens. This is one of the reasons I
-            want to switch my career path to becoming a software engineer.
+            Technology has this incredible way of totally captivating me. I
+            mean, think about it: one brilliant, impeccably executed tech idea
+            has the potential to rock millions of lives, unlike fashion or
+            architecture, where you're mostly impacting just a handful. And this
+            is precisely why I'm all fired up about transitioning into the world
+            of software engineering.
           </p>
           <p className="intro-description">
-            My name is Luan Pham. I’m passionate about creating things that
-            could change the world, things that could change people's lives. I
-            will do whatever it takes to make it.
+            I'm Luan Pham, and I live for creating stuff that can rock the
+            world, that can truly transform people's lives. I'm telling you,
+            I'll move mountains to make it happen.
           </p>
           <p className="intro-description">
-            Get in touch to find the next thing together!
+            Hit me up, let's team up and find that next game-changer, together!"
           </p>
         </section>
         <Link

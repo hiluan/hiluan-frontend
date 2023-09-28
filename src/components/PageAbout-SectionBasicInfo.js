@@ -8,7 +8,7 @@ const SectionBasicInfo = () => {
         </li>
         <li className="info-detail">
           <span className="info-detail-bold">Email</span>
-          <span className="info-detail-regular">: luan@hiluan.dev</span>
+          <span className="info-detail-regular">: LP@hiluan.dev</span>
         </li>
         <li className="info-detail">
           <span className="info-detail-bold">Location</span>
