@@ -24,12 +24,12 @@
   h2 {
     color: $darkmode-text-first;
     font-family: "Courier Prime", monospace;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 400;
     span {
       font-family: "Montserrat";
       font-weight: 300;
-      font-size: 2.8rem;
+      font-size: 2.8rem !important;
       background: transparent;
       color: $darkmode-text-second;
     }
