@@ -9,8 +9,8 @@ export const workExperience = [
     time: "December 2022 - Present",
     location: "San Jose, CA, USA",
     tasks: [
-      "Implemented advanced optimization techniques in Next.js, such as code splitting, server-side rendering, and caching strategies, resulting in a 21% reduction in UI-related issues and a 29% improvement in load time.",
       "Developed 6+ new user-facing features and created 30+ reusable platform components, significantly enhancing the company's platform, frameworks, and services.",
+      "Implemented advanced optimization techniques in Next.js, such as code splitting, server-side rendering, and caching strategies, resulting in a 21% reduction in UI-related issues and a 29% improvement in load time.",
       "Maintained impeccable code quality through regular reviews and rigorous unit testing, utilizing tools such as ESLint and Jest, thus ensuring the upkeep of a robust and reliable codebase. Achieved a solid 90% code coverage and actively contributed to 100+ pull requests, averaging 3 revisions per request.",
     ],
     contactPerson: "",
