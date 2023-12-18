@@ -9,9 +9,9 @@ export const workExperience = [
     time: "December 2022 - Present",
     location: "San Jose, CA, USA",
     tasks: [
-      "Developed user-friendly web interfaces using Next.JS and TypeScript, resulting in a 25% reduction in UI-related issues, while also successfully improving load time by 30% for a better user experience.",
-      "Collaborated with cross-functional teams, including designers and software engineers, to ensure seamless integration and maintained code quality through regular code reviews.",
-      "Effectively communicated complex technical concepts to both technical and non-technical stakeholders, facilitating informed decision-making within the team.",
+      "Implemented advanced optimization techniques in Next.js, such as code splitting, server-side rendering, and caching strategies, resulting in a 21% reduction in UI-related issues and a 29% improvement in load time.",
+      "Developed 6+ new user-facing features and created 30+ reusable platform components, significantly enhancing the company's platform, frameworks, and services.",
+      "Maintained impeccable code quality through regular reviews and rigorous unit testing, utilizing tools such as ESLint and Jest, thus ensuring the upkeep of a robust and reliable codebase. Achieved a solid 90% code coverage and actively contributed to 100+ pull requests, averaging 3 revisions per request.",
     ],
     contactPerson: "",
     website: "https://codesync.com/",
