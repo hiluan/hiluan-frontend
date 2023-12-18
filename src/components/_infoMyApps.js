@@ -39,7 +39,7 @@ const infoMyApps = [
     linkToRepo: "https://github.com/hiluan/filmspot",
   },
   {
-    name: "Skizzenhaus",
+    name: "Wizmage",
     nameDetail: "AI Image Generator",
     tools: [
       ReactJS,
@@ -51,12 +51,12 @@ const infoMyApps = [
       "Mongoose",
     ],
     description:
-      "Skizzenhaus, an AI image generator app, creates breathtaking visuals that showcase your creativity and produce stunning images in an instant.",
+      "Wizmage, an AI image generator app, creates breathtaking visuals that showcase your creativity and produce stunning images in an instant.",
     imgUrl:
       "https://i.ibb.co/RHHv7M3/hiluan-skizzenhaus-ai-image-generator-ai.gif",
-    linkToApp: "https://skizzen.haus",
+    linkToApp: "https://wizmage.vercel.app/",
     linkToRepo:
-      "https://github.com/hiluan/skizzenhaus-AI-image-generator-frontend",
+      "https://github.com/hiluan/wizmage.f",
   },
   {
     name: "Datanexus",
