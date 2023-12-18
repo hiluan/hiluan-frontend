@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import infoMyApps from "../components/_infoMyApps";
+import Spinner from "../components/Spinner";
 
 const MyApp = (props) => (
   <section className="myapp-info">
@@ -20,12 +21,15 @@ const MyApp = (props) => (
     </section>
     <section>
       <a className="myapp-image" target="_blank" href={props.app.linkToApp}>
-        <img
-          target="_blank"
-          href={props.app.linkToApp}
-          src={props.app.imgUrl}
-          alt={props.app.description}
-        />
+        {props.app.imgUrl ?
+          <img
+            target="_blank"
+            href={props.app.linkToApp}
+            src={props.app.imgUrl}
+            alt={props.app.description}
+          /> :
+          <Spinner />
+        }
       </a>
     </section>
     <section>
