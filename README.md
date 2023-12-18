@@ -28,34 +28,34 @@
   </a>
 </p>
 
-Currently Software Engineer at 100Devs and Operational Manager at Cinciao. I am
+Currently Software Engineer at CodeSync. I am
 motivated by the power of technology as a tool for positive change. See [my
 website](https://hiluan.dev) for more information!
 
 <h1 align="center">Projects</h1>
 <table bordercolor="#66b2b2">
   <!-- NURBIER -->
-  <!-- SKIZZENHAUS -->
+  <!-- WIZMAGE -->
   <tr>
-    <!-- SKIZZENHAUS -->
+    <!-- WIZMAGE -->
     <td width="50%" valign="top">
-      <h3 align="center">Skizzenhaus: AI Image Generator</h3>
+      <h3 align="center">Wizmage: AI Image Generator</h3>
       <br />
-        <a target="_blank" href="https://skizzenhaus.com">
+        <a target="_blank" href="https://wizmage.vercel.app">
           <img
             src="images/hiluan-skizzenhaus-ai-image-generator.gif"
             width="100%"
-            alt="skizzenhaus.com: AI Image Generator"
+            alt="Wizmage: AI Image Generator"
           />
         </a>
       <br />
       <p align="center">
-        <a href="https://github.com/hiluan/skizzenhaus-AI-image-generator-frontend" target="_blank">
+        <a href="https://github.com/hiluan/wizmage.f" target="_blank">
           <img
             src="https://img.shields.io/static/v1?label=|&message=REPO&color=23555f&style=plastic&logo=github&logo-color=white"
           />
         </a>
-        <a href="https://skizzenhaus.com" target="_blank">
+        <a href="https://wizmage.vercel.app" target="_blank">
           <img
             src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"
           />
